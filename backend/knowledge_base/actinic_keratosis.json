@@ -1,0 +1,49 @@
+{
+  "names": {
+    "en": "Actinic Keratosis",
+    "fr": "Kératose actinique",
+    "ar": "التقرن السفعي",
+    "dz": ["bo9a men chams", "jeld khchin men chams", "tache chams"]
+  },
+  "short_description": "Actinic keratosis is a rough, scaly skin lesion caused by long-term sun exposure. It is considered a precancerous condition and should be monitored by a dermatologist.",
+  "common_symptoms": [
+    "rough scaly patch",
+    "dry crusty skin",
+    "red or pink spot",
+    "sun-exposed area",
+    "tender or burning lesion",
+    "slow-growing rough patch"
+  ],
+  "keywords": {
+    "en": ["actinic keratosis", "rough sun spot", "precancerous skin lesion", "scaly sun damage"],
+    "fr": ["kératose actinique", "lésion solaire", "tache rugueuse", "lésion précancéreuse"],
+    "ar": ["تقرن سفعي", "بقعة خشنة من الشمس", "آفة قبل سرطانية", "ضرر الشمس"],
+    "dz": ["bo9a khachna", "chams", "jeld khchin", "tache men chams"]
+  },
+  "severity_indicators": {
+    "low": ["small rough patch", "stable lesion", "mild dryness"],
+    "medium": ["persistent scaly patch", "tender lesion", "multiple sun spots"],
+    "high": ["bleeding", "rapid growth", "pain", "ulceration", "lesion changing quickly"]
+  },
+  "temporary_advice": [
+    "Protect the skin from direct sunlight",
+    "Use sunscreen regularly",
+    "Avoid scratching or picking the lesion",
+    "Monitor changes in size, color, or texture",
+    "Take photos to track changes"
+  ],
+  "avoid": [
+    "Avoid strong sun exposure",
+    "Do not ignore a persistent rough patch",
+    "Do not pick or cut the lesion",
+    "Avoid tanning beds"
+  ],
+  "risk_notes": "Actinic keratosis can sometimes develop into skin cancer if left untreated, so medical evaluation is important.",
+  "when_to_see_doctor": [
+    "If the lesion grows, bleeds, or becomes painful",
+    "If it does not heal",
+    "If several rough sun spots appear",
+    "If the lesion changes quickly",
+    "If you are unsure about the diagnosis"
+  ]
+}

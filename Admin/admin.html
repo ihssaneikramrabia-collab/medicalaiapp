@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Medical Admin Dashboard</title>
+
+  <link rel="stylesheet" href="admin.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+
+<body>
+
+<header class="topbar">
+  <div class="top-left">
+    <div class="menu-wrap">
+      <button class="menu-btn" id="menuBtn" type="button">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <div class="drop-menu" id="sideMenu">
+        <a href="../Home/home.html"><i class="fa-solid fa-house"></i><span data-i18n="home">Home</span></a>
+        <a href="../Analyse/analyse.html"><i class="fa-regular fa-pen-to-square"></i><span data-i18n="analysis">Analysis</span></a>
+        <a href="../Hestorique/history.html"><i class="fa-regular fa-clock"></i><span data-i18n="history">History</span></a>
+        <a href="../My Account/myacc.html"><i class="fa-regular fa-user"></i><span data-i18n="myAccount">My Account</span></a>
+        <a href="../Settings/setting.html"><i class="fa-solid fa-gear"></i><span data-i18n="settings">Settings</span></a>
+        <a href="#" id="logoutBtn"><i class="fa-solid fa-arrow-right-from-bracket"></i><span data-i18n="logOut">Log Out</span></a>
+      </div>
+    </div>
+
+    <div class="logo-box">
+      <img src="../Images/logo.png" alt="Logo">
+    </div>
+
+    <div class="title-box">
+      <h1 data-i18n="appTitle">Unified Skin Health Dashboard</h1>
+      <p data-i18n="adminHeaderSubtitle">Medical administration & AI monitoring</p>
+    </div>
+  </div>
+
+  <nav class="nav">
+    <a href="../Home/home.html" data-i18n="home">Home</a>
+    <a href="../Analyse/analyse.html" data-i18n="analysis">Analysis</a>
+    <a href="../Conseil/conseil.html" data-i18n="conseils">Conseils</a>
+    <a href="../My Account/myacc.html" class="profile">
+      <i class="fa-solid fa-user-shield"></i>
+    </a>
+  </nav>
+</header>
+
+<main class="admin-page">
+
+  <section class="hero-card">
+    <div>
+      <span class="badge">
+        <i class="fa-solid fa-stethoscope"></i>
+        <span data-i18n="medicalAdminDashboard">Medical Admin Dashboard</span>
+      </span>
+
+      <h2 data-i18n="clinicalOverview">Clinical Overview & AI Diagnosis Control</h2>
+
+      <p data-i18n="adminHeroText">
+        Manage users, monitor AI predictions, review risky cases, and supervise support requests from one professional dashboard.
+      </p>
+    </div>
+
+    <div class="hero-icon">
+      <i class="fa-solid fa-user-doctor"></i>
+    </div>
+  </section>
+
+  <section class="stats-grid">
+    <div class="stat-card card">
+      <div class="stat-icon"><i class="fa-solid fa-users"></i></div>
+      <h3 id="totalPatients">0</h3>
+      <p data-i18n="totalPatients">Total Patients</p>
+      <small data-i18n="registeredUsers">Registered users</small>
+    </div>
+
+    <div class="stat-card card">
+      <div class="stat-icon purple"><i class="fa-solid fa-microscope"></i></div>
+      <h3 id="totalAnalyses">0</h3>
+      <p data-i18n="totalAnalyses">Total Analyses</p>
+      <small data-i18n="aiScanRecords">AI scan records</small>
+    </div>
+
+    <div class="stat-card card">
+      <div class="stat-icon blue"><i class="fa-solid fa-chart-line"></i></div>
+      <h3 id="avgConfidence">0%</h3>
+      <p data-i18n="avgConfidence">Avg Confidence</p>
+      <small data-i18n="predictionReliability">Prediction reliability</small>
+    </div>
+
+    <div class="stat-card card">
+      <div class="stat-icon red"><i class="fa-solid fa-triangle-exclamation"></i></div>
+      <h3 id="riskCases">0</h3>
+      <p data-i18n="highRiskCases">High-risk Cases</p>
+      <small data-i18n="needMedicalReview">Need medical review</small>
+    </div>
+  </section>
+
+  <section class="charts-grid">
+    <div class="card chart-card">
+      <div class="card-head">
+        <div>
+          <h3 data-i18n="diseaseDistribution">Disease Distribution</h3>
+          <p data-i18n="diseaseDistributionDesc">Number of detected cases by disease</p>
+        </div>
+      </div>
+      <canvas id="diseaseChart"></canvas>
+    </div>
+
+    <div class="card chart-card">
+      <div class="card-head">
+        <div>
+          <h3 data-i18n="medicalCategories">Medical Categories</h3>
+          <p data-i18n="medicalCategoriesDesc">Inflammatory, fungal, tumor, normal</p>
+        </div>
+      </div>
+      <canvas id="categoryChart"></canvas>
+    </div>
+  </section>
+
+  <section class="charts-grid second">
+    <div class="card chart-card">
+      <div class="card-head">
+        <div>
+          <h3 data-i18n="weeklyAnalyses">Weekly Analyses</h3>
+          <p data-i18n="weeklyAnalysesDesc">AI scans during the last 7 days</p>
+        </div>
+      </div>
+      <canvas id="weeklyChart"></canvas>
+    </div>
+
+    <div class="card model-card">
+      <div class="card-head">
+        <div>
+          <h3 data-i18n="aiModelStatus">AI Model Status</h3>
+          <p data-i18n="backendReadyPanel">Backend-ready monitoring panel</p>
+        </div>
+      </div>
+
+      <div class="model-row">
+        <span><i class="fa-solid fa-brain"></i> <span data-i18n="model">Model</span></span>
+        <b data-i18n="skinCnnModel">Skin CNN Model</b>
+      </div>
+
+      <div class="model-row">
+        <span><i class="fa-solid fa-bullseye"></i> <span data-i18n="accuracy">Accuracy</span></span>
+        <b>89%</b>
+      </div>
+
+      <div class="model-row">
+        <span><i class="fa-solid fa-server"></i> <span data-i18n="backendApi">Backend API</span></span>
+        <b class="status online" data-i18n="ready">Ready</b>
+      </div>
+
+      <div class="model-row">
+        <span><i class="fa-solid fa-clock"></i> <span data-i18n="lastUpdate">Last Update</span></span>
+        <b>April 2026</b>
+      </div>
+    </div>
+  </section>
+
+  <section class="card table-card">
+    <div class="card-head">
+      <div>
+        <h3 data-i18n="userManagement">User Management</h3>
+        <p data-i18n="userManagementDesc">Add users, delete accounts, block users, and change roles.</p>
+      </div>
+
+      <button class="primary-btn" id="openUserModalBtn" type="button">
+        <i class="fa-solid fa-user-plus"></i>
+        <span data-i18n="addUser">Add User</span>
+      </button>
+    </div>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th data-i18n="user">User</th>
+            <th data-i18n="email">Email</th>
+            <th data-i18n="role">Role</th>
+            <th data-i18n="status">Status</th>
+            <th data-i18n="actions">Actions</th>
+          </tr>
+        </thead>
+        <tbody id="usersTable"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="card table-card">
+    <div class="card-head">
+      <div>
+        <h3 data-i18n="recentDiagnoses">Recent Medical Diagnoses</h3>
+        <p data-i18n="recentDiagnosesDesc">Delete, review, or supervise AI predictions.</p>
+      </div>
+
+      <button class="primary-btn" id="refreshBtn" type="button">
+        <i class="fa-solid fa-rotate"></i>
+        <span data-i18n="refresh">Refresh</span>
+      </button>
+    </div>
+
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr>
+            <th data-i18n="patient">Patient</th>
+            <th data-i18n="disease">Disease</th>
+            <th data-i18n="category">Category</th>
+            <th data-i18n="confidence">Confidence</th>
+            <th data-i18n="risk">Risk</th>
+            <th data-i18n="date">Date</th>
+            <th data-i18n="actions">Actions</th>
+          </tr>
+        </thead>
+        <tbody id="diagnosisTable"></tbody>
+      </table>
+    </div>
+  </section>
+
+  <section class="bottom-grid">
+    <div class="card">
+      <div class="card-head">
+        <div>
+          <h3 data-i18n="supportRequests">Support Requests</h3>
+          <p data-i18n="supportRequestsDesc">Change ticket status or delete messages.</p>
+        </div>
+      </div>
+      <div id="supportList" class="support-list"></div>
+    </div>
+
+    <div class="card">
+      <div class="card-head">
+        <div>
+          <h3 data-i18n="doctorReviewQueue">Doctor Review Queue</h3>
+          <p data-i18n="doctorReviewQueueDesc">Approve or flag risky medical cases.</p>
+        </div>
+      </div>
+      <div id="reviewList" class="support-list"></div>
+    </div>
+  </section>
+
+</main>
+
+<div class="admin-modal" id="userModal">
+  <div class="modal-box">
+    <div class="modal-head">
+      <div>
+        <h3>
+          <i class="fa-solid fa-user-plus"></i>
+          <span data-i18n="addUser">Add User</span>
+        </h3>
+        <p data-i18n="createLocalUser">Create a new local admin/demo user</p>
+      </div>
+
+      <button type="button" id="closeUserModalBtn">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <form class="modal-form" id="userForm">
+      <label data-i18n="fullName">Full Name</label>
+      <input type="text" id="newUserName" data-i18n-placeholder="enterFullName" placeholder="Enter full name" required>
+
+      <label data-i18n="email">Email</label>
+      <input type="email" id="newUserEmail" data-i18n-placeholder="enterEmail" placeholder="Enter email" required>
+
+      <label data-i18n="role">Role</label>
+      <select id="newUserRole">
+        <option value="user" data-i18n="user">User</option>
+        <option value="doctor" data-i18n="doctor">Doctor</option>
+        <option value="admin" data-i18n="admin">Admin</option>
+      </select>
+
+      <button type="submit" class="save-btn">
+        <i class="fa-solid fa-check"></i>
+        <span data-i18n="saveUser">Save User</span>
+      </button>
+    </form>
+  </div>
+</div>
+
+<script src="../global_setings/language.js"></script>
+<script src="../global_setings/global_settings.js"></script>
+<script src="admin.js"></script>
+</body>
+</html>

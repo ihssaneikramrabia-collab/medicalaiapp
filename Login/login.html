@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login - Skin Health Dashboard</title>
+
+  <link rel="stylesheet" href="login.css"/>
+
+  <!-- FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- ICONS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header class="topbar">
+  <div class="top-left">
+
+    <div class="menu-wrap">
+      <button class="menu-btn" id="menuBtn">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+       <div class="drop-menu" id="sideMenu">
+        <a href="../Hestorique/history.html"><i class="fa-regular fa-clock"></i><span data-i18n="history">History</span></a>
+        <a href="../Analyse/analyse.html"><i class="fa-regular fa-pen-to-square"></i><span data-i18n="newChat">New Chat</span></a>
+        <a href="../My Account/myacc.html"><i class="fa-regular fa-user"></i><span data-i18n="myAccount">My Account</span></a>
+        <a href="../Settings/setting.html"><i class="fa-solid fa-gear"></i><span data-i18n="settings">Settings</span></a>
+        <a href="#" id="logoutBtn"><i class="fa-solid fa-arrow-right-from-bracket"></i><span data-i18n="logOut">Log Out</span></a>
+      </div>
+    </div>
+
+    <div class="logo-box">
+      <img src="../Images/logo.png" alt="logo">
+    </div>
+
+    <div class="title-box">
+      <h1 data-i18n="appTitle">Unified Skin Health Dashboard</h1>
+      <p data-i18n="appSubtitle">AI-powered skin rash analysis</p>
+    </div>
+
+  </div>
+
+  <nav class="nav">
+    <a href="../Home/home.html" data-i18n="home">Home</a>
+    <a href="../Analyse/analyse.html" data-i18n="analysis">Analysis</a>
+    <a href="../Conseil/conseil.html" data-i18n="conseils">Conseils</a>
+  </nav>
+</header>
+
+<!-- PAGE -->
+<main class="login-page">
+
+  <!-- LEFT -->
+  <section class="login-left">
+
+    <div class="badge">
+      <i class="fa-solid fa-shield-heart"></i>
+      <span data-i18n="secureAssistant">Secure medical assistant</span>
+    </div>
+
+    <h2 data-i18n="loginHeroTitle">
+      Welcome back to your skin health space.
+    </h2>
+
+    <p data-i18n="loginHeroText">
+      Sign in to save your history and personalize your experience.
+    </p>
+
+    <!-- 🔥 IMPORTANT PART -->
+    <div class="feature-list">
+
+      <div>
+        <i class="fa-solid fa-clock-rotate-left"></i>
+        <span data-i18n="savedHistory">Saved history</span>
+      </div>
+
+      <div>
+        <i class="fa-solid fa-user-doctor"></i>
+        <span data-i18n="medicalPreferences">Medical preferences</span>
+      </div>
+
+      <div>
+        <i class="fa-solid fa-volume-high"></i>
+        <span data-i18n="voiceChatbot">Voice chatbot support</span>
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- RIGHT CARD -->
+  <section class="login-card">
+
+    <div class="card-head">
+      <div class="card-icon">
+        <i class="fa-solid fa-user-lock"></i>
+      </div>
+
+      <h3 data-i18n="login">Login</h3>
+      <p data-i18n="loginCardText">Enter your account details</p>
+    </div>
+
+    <form id="loginForm">
+
+      <label data-i18n="email">Email</label>
+      <div class="input-box">
+        <i class="fa-regular fa-envelope"></i>
+        <input type="email" id="email" required>
+      </div>
+
+      <label data-i18n="password">Password</label>
+      <div class="input-box">
+        <i class="fa-solid fa-lock"></i>
+        <input type="password" id="password" required>
+
+        <button type="button" id="togglePassword">
+          <i class="fa-regular fa-eye"></i>
+        </button>
+      </div>
+
+      <div class="form-options">
+
+        <label class="remember">
+          <input type="checkbox" id="rememberMe">
+          <span data-i18n="rememberMe">Remember me</span>
+        </label>
+
+        <a href="#" id="forgotPassword" data-i18n="forgotPassword">
+          Forgot password?
+        </a>
+
+      </div>
+
+      <button type="submit" class="login-btn" id="loginBtn">
+        <span data-i18n="login">Login</span>
+        <i class="fa-solid fa-arrow-right"></i>
+      </button>
+
+      <p id="message" class="message"></p>
+
+      <p class="create-text">
+        <span data-i18n="dontHaveAccount">Don’t have an account?</span>
+        <a href="../CreatAcc/creatacc.html" data-i18n="createAccount">Create</a>
+      </p>
+
+    </form>
+
+    <div class="guest-access">
+      <span data-i18n="continueGuestText">Continue without account</span>
+
+      <a href="../Home/home.html" id="continueGuest">
+        <i class="fa-solid fa-user"></i>
+        <span data-i18n="continueGuest">Continue as Guest</span>
+      </a>
+    </div>
+
+  </section>
+
+</main>
+
+<!-- 🔥 IMPORTANT SCRIPTS -->
+<script src="../global_setings/language.js"></script>
+<script src="../global_setings/global_settings.js"></script>
+<script src="login.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+{
+  "names": {
+    "en": "Lupus (Skin involvement)",
+    "fr": "Lupus (atteinte cutanée)",
+    "ar": "الذئبة (تأثير جلدي)",
+    "dz": ["lupus", "marad mona3a", "7mara 3la wajh", "rash kif farasha"]
+  },
+
+  "short_description": "Lupus is an autoimmune disease that can affect the skin and other organs. On the skin, it may appear as a rash, especially on the face, often in a butterfly shape.",
+
+  "common_symptoms": [
+    "red rash on face",
+    "butterfly-shaped rash on cheeks and nose",
+    "sensitivity to sunlight",
+    "fatigue",
+    "joint pain",
+    "skin lesions",
+    "hair loss in some cases"
+  ],
+
+  "keywords": {
+    "en": ["lupus", "autoimmune rash", "butterfly rash", "face rash", "sun sensitivity"],
+    "fr": ["lupus", "maladie auto-immune", "éruption visage", "photosensibilité"],
+    "ar": ["الذئبة", "مرض مناعي", "طفح الوجه", "حساسية الشمس"],
+    "dz": ["lupus", "marad mona3a", "7mara f wajh", "rash kif farasha", "tshamch ydour"]
+  },
+
+  "severity_indicators": {
+    "low": [
+      "mild rash",
+      "light fatigue"
+    ],
+    "medium": [
+      "persistent rash",
+      "joint pain",
+      "sun sensitivity"
+    ],
+    "high": [
+      "severe fatigue",
+      "widespread rash",
+      "organ symptoms",
+      "fever",
+      "rapid worsening"
+    ]
+  },
+
+  "temporary_advice": [
+    "Avoid direct sun exposure",
+    "Use sunscreen regularly",
+    "Rest when feeling tired",
+    "Monitor symptoms closely",
+    "Avoid stress if possible"
+  ],
+
+  "avoid": [
+    "Avoid strong sun exposure",
+    "Avoid ignoring persistent symptoms",
+    "Do not self-medicate",
+    "Avoid stress triggers if possible"
+  ],
+
+  "risk_notes": "Lupus can be a serious autoimmune condition. Skin symptoms may be mild, but systemic involvement requires medical care.",
+
+  "when_to_see_doctor": [
+    "If rash appears on the face with fatigue or joint pain",
+    "If symptoms persist or worsen",
+    "If there is fever or unexplained fatigue",
+    "If multiple body symptoms appear",
+    "If diagnosis is uncertain"
+  ]
+}

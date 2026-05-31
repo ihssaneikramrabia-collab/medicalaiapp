@@ -1,0 +1,66 @@
+{
+  "names": {
+    "en": "Vasculitis",
+    "fr": "Vascularite",
+    "ar": "التهاب الأوعية الدموية",
+    "dz": ["3roq", "iltihab 3roq", "bo9a hamra", "rash m3a wja3"]
+  },
+  "short_description": "Vasculitis is inflammation of blood vessels that can cause skin rashes, red or purple spots, pain, swelling, and sometimes symptoms in other organs. It needs medical evaluation, especially if it spreads or comes with fever or pain.",
+  "common_symptoms": [
+    "red or purple rash",
+    "spots that may not fade when pressed",
+    "skin pain or tenderness",
+    "swelling",
+    "burning sensation",
+    "fatigue",
+    "sometimes fever or joint pain"
+  ],
+  "keywords": {
+    "en": ["vasculitis", "blood vessel inflammation", "purple spots", "painful rash", "red spots"],
+    "fr": ["vascularite", "inflammation des vaisseaux", "taches violettes", "éruption douloureuse"],
+    "ar": ["التهاب الأوعية", "بقع بنفسجية", "طفح مؤلم", "بقع حمراء", "تورم"],
+    "dz": ["3roq", "bo9a hamra", "bo9a banafsajiya", "rash m3a wja3", "wja3 f jeld"]
+  },
+  "severity_indicators": {
+    "low": [
+      "small localized spots",
+      "mild redness",
+      "no pain or fever"
+    ],
+    "medium": [
+      "painful rash",
+      "spreading spots",
+      "swelling",
+      "persistent symptoms"
+    ],
+    "high": [
+      "fever with rash",
+      "rapid spreading",
+      "severe pain",
+      "purple spots spreading",
+      "joint pain or fatigue",
+      "skin ulcers or wounds"
+    ]
+  },
+  "temporary_advice": [
+    "Monitor the rash and take photos to track changes",
+    "Rest and avoid irritating the skin",
+    "Keep the area clean",
+    "Avoid scratching or injuring the skin",
+    "Seek medical advice if pain, fever, or spreading appears"
+  ],
+  "avoid": [
+    "Do not ignore painful purple spots",
+    "Avoid scratching or pressing the rash",
+    "Do not self-medicate with strong creams",
+    "Avoid delaying care if fever or severe pain appears"
+  ],
+  "risk_notes": "Vasculitis can sometimes be linked to immune or systemic problems. Skin symptoms may need medical evaluation, especially with fever, pain, spreading, or purple spots.",
+  "when_to_see_doctor": [
+    "Urgently if rash appears with fever or severe pain",
+    "If purple spots spread quickly",
+    "If there is swelling, ulcers, or wounds",
+    "If joint pain, fatigue, or other body symptoms appear",
+    "If the rash does not improve or keeps returning"
+  ]
+}

@@ -1,0 +1,71 @@
+{
+  "names": {
+    "en": "Dermatitis",
+    "fr": "Dermatite",
+    "ar": "التهاب الجلد",
+    "dz": ["tahajoj", "7mara f jeld", "7ka", "jeldi y7ak"]
+  },
+
+  "short_description": "Dermatitis is a general term for skin inflammation that causes redness, itching, and irritation, often triggered by allergens or irritants.",
+
+  "common_symptoms": [
+    "redness",
+    "itching",
+    "dry skin",
+    "rash",
+    "swelling",
+    "burning sensation",
+    "skin irritation"
+  ],
+
+  "keywords": {
+    "en": ["dermatitis", "skin inflammation", "rash", "itchy skin"],
+    "fr": ["dermatite", "irritation peau", "rougeur", "démangeaison"],
+    "ar": ["التهاب الجلد", "طفح جلدي", "حكة", "احمرار"],
+    "dz": ["tahajoj", "7mara", "7ka", "jeldi y7ak", "irritation"]
+  },
+
+  "severity_indicators": {
+    "low": [
+      "mild redness",
+      "light itching",
+      "small rash"
+    ],
+    "medium": [
+      "persistent itching",
+      "dry cracked skin",
+      "widespread rash"
+    ],
+    "high": [
+      "severe inflammation",
+      "painful skin",
+      "infection signs",
+      "bleeding or crusting",
+      "strong swelling"
+    ]
+  },
+
+  "temporary_advice": [
+    "Avoid known irritants or allergens",
+    "Use gentle skincare products",
+    "Keep skin moisturized",
+    "Avoid scratching",
+    "Use mild creams if needed"
+  ],
+
+  "avoid": [
+    "Avoid harsh soaps",
+    "Do not scratch the skin",
+    "Avoid perfumes or chemicals",
+    "Avoid hot water"
+  ],
+
+  "risk_notes": "Dermatitis is usually not dangerous, but severe or untreated cases can lead to infections or chronic skin problems.",
+
+  "when_to_see_doctor": [
+    "If symptoms persist or worsen",
+    "If skin becomes painful or infected",
+    "If rash spreads quickly",
+    "If there is swelling or discharge"
+  ]
+}

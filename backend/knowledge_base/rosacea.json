@@ -1,0 +1,64 @@
+{
+  "names": {
+    "en": "Rosacea",
+    "fr": "Rosacée",
+    "ar": "الوردية",
+    "dz": ["hamra wajh", "wjah yhamer", "rosacea"]
+  },
+  "short_description": "Rosacea is a chronic skin condition that causes persistent redness, visible blood vessels, and sometimes pimples on the face.",
+  "common_symptoms": [
+    "persistent redness on face",
+    "flushing (face becomes red easily)",
+    "burning or stinging sensation",
+    "visible small blood vessels",
+    "pimples on face",
+    "sensitive skin"
+  ],
+  "keywords": {
+    "en": ["rosacea", "red face", "flushing", "facial redness"],
+    "fr": ["rosacée", "rougeur visage", "peau rouge", "flush"],
+    "ar": ["وردية", "احمرار الوجه", "احمرار دائم", "حساسية الوجه"],
+    "dz": ["hamra wajh", "wjah yhamer", "7ri9 f wajh"]
+  },
+  "severity_indicators": {
+    "low": [
+      "mild redness",
+      "occasional flushing",
+      "slight sensitivity"
+    ],
+    "medium": [
+      "persistent redness",
+      "visible blood vessels",
+      "burning sensation",
+      "pimples on face"
+    ],
+    "high": [
+      "severe redness",
+      "pain or strong burning",
+      "eye irritation",
+      "thickened skin",
+      "rapid worsening"
+    ]
+  },
+  "temporary_advice": [
+    "Avoid heat and hot environments",
+    "Avoid spicy food and alcohol",
+    "Use gentle skincare products",
+    "Protect skin from sun exposure",
+    "Use sunscreen daily"
+  ],
+  "avoid": [
+    "Avoid hot drinks and spicy food",
+    "Avoid strong skincare products",
+    "Avoid excessive sun exposure",
+    "Avoid stress triggers if possible"
+  ],
+  "risk_notes": "Rosacea is not dangerous but can worsen over time and affect quality of life if not managed.",
+  "when_to_see_doctor": [
+    "If redness becomes persistent",
+    "If burning or pain increases",
+    "If pimples appear frequently",
+    "If eyes become irritated",
+    "If condition worsens over time"
+  ]
+}

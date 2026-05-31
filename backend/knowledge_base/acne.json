@@ -1,0 +1,69 @@
+{
+  "names": {
+    "en": "Acne",
+    "fr": "Acné",
+    "ar": "حب الشباب",
+    "dz": ["hboub", "boutons", "7boub", "hab chabab"]
+  },
+  "short_description": "Acne is a common skin condition where pores become blocked by oil, dead skin cells, and bacteria, causing pimples, blackheads, whiteheads, and sometimes inflamed painful bumps.",
+  "common_symptoms": [
+    "pimples",
+    "blackheads",
+    "whiteheads",
+    "oily skin",
+    "redness",
+    "inflamed spots",
+    "painful bumps",
+    "sometimes scars after severe acne"
+  ],
+  "keywords": {
+    "en": ["acne", "pimples", "zits", "breakout", "blackheads", "whiteheads", "oily skin"],
+    "fr": ["acné", "boutons", "points noirs", "points blancs", "peau grasse"],
+    "ar": ["حب الشباب", "حبوب", "بثور", "رؤوس سوداء", "رؤوس بيضاء", "بشرة دهنية"],
+    "dz": ["hboub", "7boub", "boutons", "hab chabab", "wajhi fih hboub", "peau grasse"]
+  },
+  "severity_indicators": {
+    "low": [
+      "few pimples",
+      "mild acne",
+      "small blackheads",
+      "occasional breakout"
+    ],
+    "medium": [
+      "inflamed pimples",
+      "persistent acne",
+      "painful bumps",
+      "acne spreading on face"
+    ],
+    "high": [
+      "severe painful cysts",
+      "deep nodules",
+      "scarring",
+      "acne with swelling or pus",
+      "significant emotional distress"
+    ]
+  },
+  "temporary_advice": [
+    "Wash the face gently twice daily with a mild cleanser",
+    "Avoid touching, squeezing, or picking pimples",
+    "Use non-comedogenic skincare and sunscreen",
+    "Avoid heavy oily creams or makeup",
+    "Change pillowcases regularly",
+    "Be patient because acne improvement can take weeks"
+  ],
+  "avoid": [
+    "Do not squeeze pimples",
+    "Avoid harsh scrubbing",
+    "Avoid applying random creams without advice",
+    "Avoid oily cosmetics",
+    "Avoid sharing towels"
+  ],
+  "risk_notes": "Acne is usually not dangerous, but severe or untreated acne can cause scars, dark marks, pain, and emotional stress.",
+  "when_to_see_doctor": [
+    "If acne is severe, painful, or cystic",
+    "If acne leaves scars or dark marks",
+    "If pimples contain pus or swelling increases",
+    "If acne does not improve after basic skincare",
+    "If acne affects confidence or daily life"
+  ]
+}

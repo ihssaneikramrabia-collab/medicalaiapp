@@ -1,0 +1,6 @@
+{
+  "triage_logic": {
+    "urgent": ["bleeding", "severe pain"],
+    "fast_dermatology_review": ["spreading rash", "infection"]
+  }
+}

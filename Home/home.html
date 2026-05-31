@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="homeTitle">Skin Health Dashboard</title>
+
+  <link rel="stylesheet" href="home.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<div class="dashboard">
+
+  <header class="topbar">
+    <div class="top-left left-menu">
+      <button class="menu-btn" id="menuBtn" type="button">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <div class="drop-menu" id="sideMenu">
+        <a href="../Hestorique/history.html"><i class="fa-regular fa-clock"></i><span data-i18n="history">History</span></a>
+        <a href="../Analyse/analyse.html"><i class="fa-regular fa-pen-to-square"></i><span data-i18n="newChat">New Chat</span></a>
+        <a href="../My Account/myacc.html"><i class="fa-regular fa-user"></i><span data-i18n="myAccount">My Account</span></a>
+        <a href="../Settings/setting.html"><i class="fa-solid fa-gear"></i><span data-i18n="settings">Settings</span></a>
+        <a href="#" id="logoutBtn"><i class="fa-solid fa-arrow-right-from-bracket"></i><span data-i18n="logOut">Log Out</span></a>
+      </div>
+
+      <div class="logo-box">
+        <img src="../Images/logo.png" alt="Logo">
+      </div>
+
+      <div class="title-box">
+        <h1 data-i18n="appTitle">Unified Skin Health Dashboard</h1>
+        <p data-i18n="appSubtitle">AI-powered skin rash analysis with voice assistant support</p>
+      </div>
+    </div>
+
+    <nav class="nav">
+      <a href="home.html" class="active" data-i18n="home">Home</a>
+      <a href="../Analyse/analyse.html" data-i18n="analysis">Analysis</a>
+      <a href="../Conseil/conseil.html" data-i18n="conseils">Conseils</a>
+      <a href="../Login/login.html" class="profile"><i class="fa-solid fa-user"></i></a>
+    </nav>
+  </header>
+
+  <main class="hero">
+
+    <section class="hero-left">
+      <div class="badge">
+        <i class="fa-solid fa-shield-heart"></i>
+        <span data-i18n="smartMedicalInterface">Smart Medical Interface</span>
+      </div>
+
+      <h2>
+        <span data-i18n="professional">Professional</span><br>
+        <span class="green" data-i18n="skinRashAI">Skin Rash AI</span><br>
+        <span data-i18n="dashboardVoiceBot">Dashboard & Voice Bot</span>
+      </h2>
+
+      <p class="desc" data-i18n="homeDesc">
+        A modern web-based platform for intelligent skin rash detection,
+        confidence monitoring, and voice-enabled medical assistance in one clean
+        and professional interface.
+      </p>
+
+      <div class="meta-row">
+        <div class="meta-pill">
+          <i class="fa-regular fa-calendar"></i>
+          <div>
+            <small data-i18n="currentDate">Current date</small>
+            <strong class="date">--</strong>
+          </div>
+        </div>
+
+        <div class="meta-pill">
+          <i class="fa-solid fa-shield-heart"></i>
+          <div>
+            <small data-i18n="detectionStatus">Detection status</small>
+            <strong data-i18n="systemReady">System ready</strong>
+          </div>
+        </div>
+
+        <div class="meta-pill">
+          <i class="fa-solid fa-microphone-lines"></i>
+          <div>
+            <small data-i18n="assistantMode">Assistant mode</small>
+            <strong data-i18n="voiceEnabled">Voice enabled</strong>
+          </div>
+        </div>
+      </div>
+
+      <div class="actions">
+        <button class="start-btn" id="startBtn" type="button">
+          <span><i class="fa-solid fa-magnifying-glass"></i> <span data-i18n="startAnalysis">Start Analysis</span></span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+
+        <button class="ghost-btn" id="recommendBtn" type="button">
+          <span><i class="fa-regular fa-clipboard"></i> <span data-i18n="viewRecommendations">View Recommendations</span></span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </button>
+      </div>
+
+      <div class="bottom-note" data-i18n="homeBottomNote">
+        Secure • Private • AI-Powered • Clinically Inspired
+      </div>
+    </section>
+    
+    <section class="hero-right">
+
+      <div class="stats-card">
+        <div class="stats-top">
+          <h3 data-i18n="systemAccuracy">System Accuracy</h3>
+          <span data-i18n="high">High</span>
+        </div>
+
+        <div class="progress-wrap">
+          <div class="progress"><div class="bar"></div></div>
+          <b>89%</b>
+        </div>
+
+        <div class="stats-grid">
+          <div>
+            <i class="fa-solid fa-bullseye"></i>
+            <small data-i18n="detectionRate">Detection rate</small>
+            <strong>89%</strong>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-bolt"></i>
+            <small data-i18n="aiResponse">AI response</small>
+            <strong data-i18n="fast">Fast</strong>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-headset"></i>
+            <small data-i18n="voiceSupport">Voice support</small>
+            <strong data-i18n="active">Active</strong>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</div>
+
+<script src="../global_setings/language.js"></script>
+<script src="../global_setings/global_settings.js"></script>
+<script src="home.js"></script>
+</body>
+</html>

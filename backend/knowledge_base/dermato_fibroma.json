@@ -1,0 +1,49 @@
+{
+  "names": {
+    "en": "Dermatofibroma",
+    "fr": "Dermatofibrome",
+    "ar": "ورم ليفي جلدي",
+    "dz": ["kora sghira f jeld", "bo9a 9as7a", "t3emla sghira"]
+  },
+  "short_description": "Dermatofibroma is a common benign skin nodule that often feels firm and may appear brown, pink, or skin-colored. It is usually harmless.",
+  "common_symptoms": [
+    "small firm bump",
+    "brown or pink nodule",
+    "dimple when pinched",
+    "usually painless",
+    "slow-growing lesion",
+    "sometimes itchy or tender"
+  ],
+  "keywords": {
+    "en": ["dermatofibroma", "firm skin bump", "benign skin nodule", "small hard lump"],
+    "fr": ["dermatofibrome", "petite boule ferme", "nodule cutané", "lésion bénigne"],
+    "ar": ["ورم ليفي جلدي", "كتلة جلدية صغيرة", "نتوء صلب", "ورم حميد"],
+    "dz": ["kora sghira", "bo9a 9as7a", "t3emla", "7biba 9as7a"]
+  },
+  "severity_indicators": {
+    "low": ["small stable bump", "no pain", "no growth"],
+    "medium": ["itching", "tenderness", "cosmetic concern"],
+    "high": ["rapid growth", "bleeding", "pain", "color change", "uncertain diagnosis"]
+  },
+  "temporary_advice": [
+    "Avoid scratching or injuring the bump",
+    "Monitor its size and color",
+    "Keep the skin clean",
+    "Take a photo if it changes",
+    "Seek medical advice if it becomes painful or grows"
+  ],
+  "avoid": [
+    "Do not try to remove it yourself",
+    "Avoid repeated friction",
+    "Do not ignore rapid changes",
+    "Avoid scratching"
+  ],
+  "risk_notes": "Dermatofibroma is usually benign and harmless, but any rapidly changing or painful lesion should be checked.",
+  "when_to_see_doctor": [
+    "If the bump grows quickly",
+    "If it becomes painful or bleeds",
+    "If the color changes",
+    "If you are unsure about the lesion",
+    "If it causes discomfort"
+  ]
+}

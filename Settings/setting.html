@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Settings - Skin Health Dashboard</title>
+
+  <link rel="stylesheet" href="setting.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<header class="topbar">
+  <div class="top-left">
+    <div class="menu-wrap">
+      <button class="menu-btn" id="menuBtn" type="button">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <div class="drop-menu" id="sideMenu">
+        <a href="../Hestorique/history.html"><i class="fa-regular fa-clock"></i><span data-i18n="history">History</span></a>
+        <a href="../Analyse/analyse.html"><i class="fa-regular fa-pen-to-square"></i><span data-i18n="newChat">New Chat</span></a>
+        <a href="../My Account/myacc.html"><i class="fa-regular fa-user"></i><span data-i18n="myAccount">My Account</span></a>
+        <a href="setting.html"><i class="fa-solid fa-gear"></i><span data-i18n="settings">Settings</span></a>
+        <a href="#" id="logoutBtn"><i class="fa-solid fa-arrow-right-from-bracket"></i><span data-i18n="logOut">Log Out</span></a>
+      </div>
+    </div>
+
+    <div class="logo-box">
+      <img src="../Images/logo.png" alt="Logo">
+    </div>
+
+    <div class="title-box">
+      <h1 data-i18n="appTitle">Unified Skin Health Dashboard</h1>
+      <p data-i18n="appSubtitle">AI-powered skin rash analysis with voice assistant support</p>
+    </div>
+  </div>
+
+  <nav class="nav">
+  <a href="../Home/home.html" data-i18n="home">Home</a>
+  <a href="../Analyse/analyse.html" data-i18n="analysis">Analysis</a>
+  <a href="../Conseil/conseil.html" data-i18n="conseils">Conseils</a>
+  <a href="../Login/login.html" class="profile">
+    <i class="fa-solid fa-user"></i>
+  </a>
+</nav>
+</header>
+
+<main class="settings-page no-sidebar">
+  <section class="content">
+
+    <div class="page-head">
+      <div>
+        <h2 data-i18n="settings">Settings</h2>
+        <p data-i18n="settingsDesc">Manage your preferences and personalize your experience.</p>
+      </div>
+
+      <div class="mode-switch">
+        <span data-i18n="userMode">User mode</span>
+        <button id="guestBtn" class="mode-btn" data-i18n="guest">Guest</button>
+        <button id="registeredBtn" class="mode-btn" data-i18n="registered">Registered</button>
+      </div>
+    </div>
+
+    <div class="guest-banner">
+      <div class="banner-icon">
+        <i class="fa-solid fa-lock"></i>
+      </div>
+
+      <div>
+        <h3 data-i18n="unlockFeatures">Unlock full features</h3>
+        <p data-i18n="unlockText">Create an account to save your analysis history, export data, and get personalized medical preferences.</p>
+      </div>
+
+      <button class="primary-btn" id="createAccountBtn" data-i18n="createAccount">Create Account</button>
+    </div>
+
+    <div class="card profile-card locked-feature">
+      <div class="profile-left">
+        <div class="avatar">
+          <i class="fa-solid fa-user"></i>
+        </div>
+
+        <div>
+          <h3 data-i18n="profileAccount">Profile & Account</h3>
+          <p data-i18n="manageInfo">Manage your personal information</p>
+        </div>
+      </div>
+
+      <div class="profile-info">
+        <div>
+          <small data-i18n="username">Username</small>
+          <strong id="displayName">User Name</strong>
+        </div>
+
+        <div>
+          <small data-i18n="email">Email</small>
+          <strong id="displayEmail">user@example.com</strong>
+        </div>
+
+        <div>
+          <small data-i18n="memberSince">Member since</small>
+          <strong>April 2026</strong>
+        </div>
+      </div>
+
+      <button class="outline-btn" id="openProfileBtn">
+        <i class="fa-solid fa-user-pen"></i>
+        <span data-i18n="editProfile">Edit Profile</span>
+      </button>
+    </div>
+
+    <div class="grid">
+
+<div class="card">
+  <div class="card-title">
+    <i class="fa-solid fa-shield-heart"></i>
+    <div>
+      <h3 data-i18n="aiMedicalSafety">AI Medical Safety</h3>
+      <p data-i18n="aiMedicalSafetyDesc">Honest triage and safe medical guidance</p>
+    </div>
+  </div>
+
+  <div class="setting-row">
+    <span data-i18n="honestSafetyTriage">Honest safety triage</span>
+    <span class="status-pill active" data-i18n="enabled">Enabled</span>
+  </div>
+
+  <div class="setting-row">
+    <span data-i18n="autoLanguageDetection">Auto language detection</span>
+    <span class="status-pill active" data-i18n="enabled">Enabled</span>
+  </div>
+
+  <div class="setting-row">
+    <span data-i18n="emergencyRedFlags">Emergency red flags</span>
+    <span class="status-pill danger" data-i18n="protected">Protected</span>
+  </div>
+
+  <div class="mini-info" data-i18n="chatbotRiskInfo">
+    The chatbot detects risk level automatically and gives calm, honest advice without replacing a doctor.
+  </div>
+</div>
+
+      <div class="card">
+        <div class="card-title">
+          <i class="fa-solid fa-shield-halved"></i>
+          <div>
+            <h3 data-i18n="privacyData">Privacy & Data</h3>
+            <p data-i18n="privacyDesc">Control your data and privacy</p>
+          </div>
+        </div>
+
+        <div class="setting-row locked-feature">
+          <span data-i18n="saveHistory">Save analysis history</span>
+          <label class="switch">
+            <input type="checkbox" id="saveHistoryToggle">
+            <b></b>
+          </label>
+        </div>
+
+        <div class="setting-row locked-feature">
+          <span data-i18n="exportData">Export my data</span>
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+
+        <div class="setting-row locked-feature">
+          <span data-i18n="deleteHistory">Delete all history</span>
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+
+        <div class="setting-row">
+          <span data-i18n="clearImages">Clear uploaded images</span>
+          <i class="fa-solid fa-trash"></i>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-title">
+          <i class="fa-solid fa-volume-high"></i>
+          <div>
+            <h3 data-i18n="voiceAssistant">Voice Assistant</h3>
+            <p data-i18n="voiceDesc">Customize voice assistant preferences</p>
+          </div>
+        </div>
+
+        <label class="field-label" data-i18n="voice">Voice</label>
+        <select id="voiceSelect">
+          <option value="female" data-i18n="naturalFemale">Natural Female</option>
+          <option value="male" data-i18n="naturalMale">Natural Male</option>
+          <option value="browser" data-i18n="browserVoice">Default Browser Voice</option>
+        </select>
+
+        <label class="field-label" data-i18n="speechSpeed">Speech Speed</label>
+        <input id="speechSpeed" type="range" min="0.5" max="1.5" step="0.1" value="1">
+
+        <div class="setting-row">
+          <span data-i18n="autoRead">Auto read chatbot responses</span>
+          <label class="switch">
+            <input type="checkbox" id="autoReadToggle">
+            <b></b>
+          </label>
+        </div>
+      </div>
+
+      <div class="card locked-feature">
+        <div class="card-title">
+          <i class="fa-regular fa-bell"></i>
+          <div>
+            <h3 data-i18n="notifications">Notifications</h3>
+            <p data-i18n="notificationsDesc">Manage reminders and updates</p>
+          </div>
+        </div>
+
+        <div class="setting-row">
+          <span data-i18n="skinReminder">Skin care reminders</span>
+          <label class="switch">
+            <input type="checkbox" id="skinReminderToggle">
+            <b></b>
+          </label>
+        </div>
+
+        <div class="setting-row">
+          <span data-i18n="followUp">Follow-up reminders</span>
+          <label class="switch">
+            <input type="checkbox" id="followUpToggle">
+            <b></b>
+          </label>
+        </div>
+
+        <div class="setting-row">
+          <span data-i18n="productUpdates">Product updates</span>
+          <label class="switch">
+            <input type="checkbox" id="productUpdateToggle">
+            <b></b>
+          </label>
+        </div>
+      </div>
+
+      <div class="card locked-feature">
+        <div class="card-title">
+          <i class="fa-solid fa-notes-medical"></i>
+          <div>
+            <h3 data-i18n="medicalPreferences">Medical Preferences</h3>
+            <p data-i18n="medicalDesc">Help us give more personalized advice</p>
+          </div>
+        </div>
+
+        <label class="field-label" data-i18n="skinType">Skin type</label>
+        <select id="skinTypeSelect">
+          <option value="normal" data-i18n="normal">Normal</option>
+          <option value="dry" data-i18n="dry">Dry</option>
+          <option value="oily" data-i18n="oily">Oily</option>
+          <option value="sensitive" data-i18n="sensitive">Sensitive</option>
+        </select>
+
+        <label class="field-label" data-i18n="sensitiveSkin">Sensitive skin</label>
+        <div class="choice-row" data-choice="sensitiveSkin">
+          <button type="button" data-value="yes" data-i18n="yes">Yes</button>
+          <button type="button" data-value="no" class="selected" data-i18n="no">No</button>
+        </div>
+
+        <label class="field-label" data-i18n="allergies">Known allergies</label>
+        <input id="allergyInput" type="text" data-i18n-placeholder="none" placeholder="None">
+
+        <label class="field-label" data-i18n="adviceLevel">Advice detail level</label>
+        <div class="choice-row" data-choice="adviceLevel">
+          <button type="button" data-value="simple" data-i18n="simple">Simple</button>
+          <button type="button" data-value="detailed" class="selected" data-i18n="detailed">Detailed</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-title">
+          <i class="fa-solid fa-palette"></i>
+          <div>
+            <h3 data-i18n="appearance">Appearance</h3>
+            <p data-i18n="appearanceDesc">Customize the application look</p>
+          </div>
+        </div>
+        <label class="field-label" data-i18n="language">Language</label>
+
+         <select id="languageSelect">
+           <option value="en">English</option>
+           <option value="fr">Français</option>
+           <option value="ar">العربية</option>
+         </select>
+        <label class="field-label" data-i18n="theme">Theme</label>
+        <div class="choice-row" data-choice="theme">
+          <button type="button" data-value="light" class="selected">
+            <i class="fa-solid fa-sun"></i>
+            <span data-i18n="light">Light</span>
+          </button>
+          <button type="button" data-value="dark">
+            <i class="fa-solid fa-moon"></i>
+            <span data-i18n="dark">Dark</span>
+          </button>
+        </div>
+
+       <label class="field-label" data-i18n="interfaceStatus">Interface status</label>
+
+       <div class="setting-row">
+       <span data-i18n="darkLightTheme">Dark / Light theme</span>
+       <span class="status-pill active" data-i18n="active">Active</span>
+       </div>
+
+       <div class="setting-row">
+       <span data-i18n="responsiveLayout">Responsive layout</span>
+       <span class="status-pill active" data-i18n="ready">Ready</span>
+     </div>
+
+     <div class="setting-row">
+     <span data-i18n="medicalUIStyle">Medical UI style</span>
+     <span class="status-pill active" data-i18n="professional">Professional</span>
+     </div>
+      </div>
+
+    </div>
+
+    <div class="safety-card">
+      <i class="fa-solid fa-circle-info"></i>
+
+      <div>
+        <h3 data-i18n="supportTitle">Need help? Contact our support team</h3>
+        <p data-i18n="supportDesc">This tool is for educational purposes only and does not replace professional medical advice.</p>
+      </div>
+
+      <button class="outline-btn" id="openSupportBtn">
+        <i class="fa-solid fa-envelope"></i>
+        <span data-i18n="contactSupport">Contact Support</span>
+      </button>
+    </div>
+
+  </section>
+</main>
+
+<div class="support-modal" id="supportModal">
+  <div class="support-box">
+    <div class="support-head">
+      <div>
+        <h3>
+          <i class="fa-solid fa-envelope"></i>
+          <span data-i18n="contactSupport">Contact Support</span>
+        </h3>
+        <p data-i18n="supportTitle">Need help? Contact our support team</p>
+      </div>
+
+      <button type="button" id="closeSupportBtn">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <form class="support-form" id="supportForm">
+      <label data-i18n="name">Name</label>
+      <input type="text" id="supportName" data-i18n-placeholder="namePlaceholder" placeholder="Enter your name" required>
+
+      <label data-i18n="email">Email</label>
+      <input type="email" id="supportEmail" data-i18n-placeholder="emailPlaceholder" placeholder="Enter your email" required>
+
+      <label data-i18n="message">Message</label>
+      <textarea id="supportMessage" data-i18n-placeholder="messagePlaceholder" placeholder="Write your message..." required></textarea>
+
+      <button type="submit" class="send-support-btn">
+        <i class="fa-solid fa-paper-plane"></i>
+        <span data-i18n="sendMessage">Send Message</span>
+      </button>
+    </form>
+  </div>
+</div>
+
+<div class="profile-modal" id="profileModal">
+  <div class="profile-box">
+    <div class="profile-head">
+      <div>
+        <h3>
+          <i class="fa-solid fa-user-pen"></i>
+          <span data-i18n="editProfile">Edit Profile</span>
+        </h3>
+        <p data-i18n="updateAccount">Update your account information</p>
+      </div>
+
+      <button type="button" id="closeProfileBtn">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <form class="profile-form" id="profileForm">
+      <label data-i18n="fullName">Full Name</label>
+      <input type="text" id="profileName" data-i18n-placeholder="fullNamePlaceholder" placeholder="Enter your full name" required>
+
+      <label data-i18n="email">Email</label>
+      <input type="email" id="profileEmail" data-i18n-placeholder="emailPlaceholder" placeholder="Enter your email" required>
+
+      <label data-i18n="phone">Phone</label>
+      <input type="text" id="profilePhone" data-i18n-placeholder="phonePlaceholder" placeholder="Enter your phone number">
+
+      <label data-i18n="avatar">Avatar</label>
+      <input type="file" id="profileAvatar" accept="image/*">
+
+      <button type="submit" class="save-profile-btn">
+        <i class="fa-solid fa-check"></i>
+        <span data-i18n="saveProfile">Save Profile</span>
+      </button>
+    </form>
+  </div>
+</div>
+<script src="../global_setings/language.js"></script>
+<script src="../global_setings/global_settings.js"></script>
+
+<script src="setting.js"></script>
+</body>
+</html>

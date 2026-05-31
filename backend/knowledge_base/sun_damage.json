@@ -1,0 +1,63 @@
+{
+  "names": {
+    "en": "Sun Damage",
+    "fr": "Dommages du soleil",
+    "ar": "أضرار الشمس",
+    "dz": ["chams", "hrou9 chams", "darbet chams"]
+  },
+  "short_description": "Sun damage occurs when skin is exposed to excessive sunlight, causing redness, burns, premature aging, and increased risk of skin cancer.",
+  "common_symptoms": [
+    "red skin",
+    "sunburn",
+    "painful skin",
+    "peeling skin",
+    "dryness",
+    "dark spots",
+    "sensitive skin"
+  ],
+  "keywords": {
+    "en": ["sunburn", "sun damage", "red skin from sun", "burn from sun"],
+    "fr": ["coup de soleil", "brûlure soleil", "peau rouge soleil"],
+    "ar": ["حروق الشمس", "احمرار من الشمس", "ضرر الشمس"],
+    "dz": ["chams", "hrou9", "jeld y7ra9", "darbet chams"]
+  },
+  "severity_indicators": {
+    "low": [
+      "mild redness",
+      "slight discomfort"
+    ],
+    "medium": [
+      "painful redness",
+      "peeling skin",
+      "burning sensation"
+    ],
+    "high": [
+      "blisters",
+      "severe pain",
+      "fever",
+      "dizziness",
+      "large skin areas affected"
+    ]
+  },
+  "temporary_advice": [
+    "Move away from sun immediately",
+    "Cool the skin with water",
+    "Apply soothing moisturizer",
+    "Drink plenty of water",
+    "Use sunscreen to prevent future damage"
+  ],
+  "avoid": [
+    "Avoid further sun exposure",
+    "Do not pop blisters",
+    "Avoid hot showers",
+    "Avoid scratching peeling skin"
+  ],
+  "risk_notes": "Severe sun damage can lead to long-term skin problems and increase risk of skin cancer.",
+  "when_to_see_doctor": [
+    "If blisters appear",
+    "If pain is severe",
+    "If there is fever or dizziness",
+    "If large areas of skin are affected",
+    "If symptoms do not improve"
+  ]
+}

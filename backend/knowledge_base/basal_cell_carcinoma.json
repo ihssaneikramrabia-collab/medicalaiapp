@@ -1,0 +1,50 @@
+{
+  "names": {
+    "en": "Basal Cell Carcinoma",
+    "fr": "Carcinome basocellulaire",
+    "ar": "سرطان الخلايا القاعدية",
+    "dz": ["bo9a khatira", "jar7 maybrach", "tache tkber", "skin cancer"]
+  },
+  "short_description": "Basal cell carcinoma is a common type of skin cancer that often appears as a slow-growing bump, shiny lesion, or sore that does not heal. It usually grows slowly but needs medical treatment.",
+  "common_symptoms": [
+    "shiny bump",
+    "non-healing sore",
+    "bleeding lesion",
+    "pearly skin growth",
+    "pink or red patch",
+    "skin wound that returns",
+    "visible small blood vessels"
+  ],
+  "keywords": {
+    "en": ["basal cell carcinoma", "skin cancer", "non healing sore", "pearly bump", "bleeding skin lesion"],
+    "fr": ["carcinome basocellulaire", "cancer de la peau", "plaie qui ne guérit pas", "lésion qui saigne"],
+    "ar": ["سرطان الخلايا القاعدية", "سرطان الجلد", "جرح لا يلتئم", "كتلة لامعة", "نزيف الجلد"],
+    "dz": ["jar7 maybrach", "bo9a tkber", "tache khatira", "bo9a tssil dem"]
+  },
+  "severity_indicators": {
+    "low": ["small stable bump", "slow-growing spot"],
+    "medium": ["persistent lesion", "recurrent sore", "visible blood vessels"],
+    "high": ["bleeding", "ulceration", "rapid growth", "pain", "non-healing wound"]
+  },
+  "temporary_advice": [
+    "Do not scratch or pick the lesion",
+    "Protect the area from sun exposure",
+    "Take photos to monitor changes",
+    "Keep the area clean",
+    "Seek dermatology advice"
+  ],
+  "avoid": [
+    "Do not ignore a wound that does not heal",
+    "Avoid strong sun exposure",
+    "Do not try to remove it yourself",
+    "Avoid applying random creams"
+  ],
+  "risk_notes": "Basal cell carcinoma is usually slow-growing but it is a cancerous lesion and requires medical diagnosis and treatment.",
+  "when_to_see_doctor": [
+    "If a sore does not heal",
+    "If a lesion bleeds or crusts repeatedly",
+    "If a bump grows slowly over time",
+    "If the lesion changes color or shape",
+    "If you suspect skin cancer"
+  ]
+}

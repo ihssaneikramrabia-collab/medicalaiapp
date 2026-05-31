@@ -1,0 +1,72 @@
+{
+  "names": {
+    "en": "Candidiasis",
+    "fr": "Candidose",
+    "ar": "داء المبيضات",
+    "dz": ["champignon", "fotr", "7ka f jeld", "taharruj m3a rtooba"]
+  },
+
+  "short_description": "Candidiasis is a fungal infection caused by yeast (Candida), often affecting warm and moist areas of the skin.",
+
+  "common_symptoms": [
+    "itching",
+    "redness",
+    "skin irritation",
+    "white patches",
+    "moist skin",
+    "burning sensation",
+    "rash in skin folds"
+  ],
+
+  "keywords": {
+    "en": ["fungal infection", "candida", "yeast infection", "skin fungus"],
+    "fr": ["candidose", "infection fongique", "champignon peau"],
+    "ar": ["فطريات", "عدوى فطرية", "كانديدا", "التهاب جلدي فطري"],
+    "dz": ["champignon", "fotr", "7ka", "rtooba", "jeld mrattab"]
+  },
+
+  "severity_indicators": {
+    "low": [
+      "mild itching",
+      "small red area",
+      "localized rash"
+    ],
+    "medium": [
+      "persistent itching",
+      "spreading rash",
+      "skin discomfort"
+    ],
+    "high": [
+      "intense itching",
+      "wide spread infection",
+      "pain or burning",
+      "cracks or bleeding skin",
+      "recurrent infections"
+    ]
+  },
+
+  "temporary_advice": [
+    "Keep the affected area clean and dry",
+    "Wear loose and breathable clothing",
+    "Avoid moisture buildup",
+    "Use antifungal creams if available",
+    "Change clothes regularly"
+  ],
+
+  "avoid": [
+    "Avoid humidity and sweat",
+    "Do not scratch the area",
+    "Avoid tight clothing",
+    "Do not use random creams"
+  ],
+
+  "risk_notes": "Fungal infections are usually treatable, but they can spread if not managed properly, especially in warm and moist environments.",
+
+  "when_to_see_doctor": [
+    "If infection spreads or worsens",
+    "If itching becomes severe",
+    "If skin cracks or bleeds",
+    "If it does not improve with basic care",
+    "If it keeps coming back"
+  ]
+}

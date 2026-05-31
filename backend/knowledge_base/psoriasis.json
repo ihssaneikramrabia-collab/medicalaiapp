@@ -1,0 +1,68 @@
+{
+  "names": {
+    "en": "Psoriasis",
+    "fr": "Psoriasis",
+    "ar": "الصدفية",
+    "dz": ["sadaf", "psoriasis", "9chour f jeld", "jeld fih 9chour"]
+  },
+  "short_description": "Psoriasis is a chronic inflammatory skin condition that causes thick, scaly, red patches. It can come and go in flare-ups and may be triggered by stress, infections, cold weather, or skin irritation.",
+  "common_symptoms": [
+    "red patches",
+    "thick silvery scales",
+    "dry cracked skin",
+    "itching",
+    "burning sensation",
+    "painful skin",
+    "scaling on elbows, knees, scalp, or body"
+  ],
+  "keywords": {
+    "en": ["psoriasis", "scaly skin", "red patches", "silver scales", "thick scales"],
+    "fr": ["psoriasis", "plaques rouges", "squames", "peau qui pèle", "plaques épaisses"],
+    "ar": ["صدفية", "قشور", "بقع حمراء", "جلد متقشر", "قشور فضية"],
+    "dz": ["sadaf", "9chour", "hamra", "jeld y9acher", "plaques", "9chour f rass"]
+  },
+  "severity_indicators": {
+    "low": [
+      "small scaly patch",
+      "mild itching",
+      "limited area"
+    ],
+    "medium": [
+      "several red scaly patches",
+      "persistent itching",
+      "cracked skin",
+      "flare-ups coming back"
+    ],
+    "high": [
+      "severe pain",
+      "bleeding cracks",
+      "large body areas affected",
+      "joint pain",
+      "pus or infection signs",
+      "rapid worsening"
+    ]
+  },
+  "temporary_advice": [
+    "Keep the skin moisturized",
+    "Avoid scratching the plaques",
+    "Use gentle fragrance-free skincare",
+    "Avoid harsh soaps",
+    "Protect skin from dryness and cold weather",
+    "Try to identify triggers such as stress or irritation"
+  ],
+  "avoid": [
+    "Do not scratch strongly",
+    "Avoid harsh soaps and perfumes",
+    "Avoid picking scales",
+    "Avoid random creams without medical advice",
+    "Avoid skin trauma or friction"
+  ],
+  "risk_notes": "Psoriasis is usually not contagious, but it can become painful, chronic, and may be associated with joint problems in some people.",
+  "when_to_see_doctor": [
+    "If plaques spread or become painful",
+    "If skin cracks, bleeds, or shows infection signs",
+    "If itching prevents sleep",
+    "If there is joint pain or swelling",
+    "If symptoms keep coming back or worsen"
+  ]
+}

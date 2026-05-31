@@ -1,0 +1,49 @@
+{
+  "names": {
+    "en": "Benign Keratosis",
+    "fr": "Kératose bénigne",
+    "ar": "تقرن جلدي حميد",
+    "dz": ["bo9a khachna", "tache bniya", "jeld khchin", "keratose"]
+  },
+  "short_description": "Benign keratosis is a non-cancerous skin growth that may look like a rough, raised, or waxy spot. It is usually harmless but should be monitored for changes.",
+  "common_symptoms": [
+    "rough skin growth",
+    "waxy or stuck-on spot",
+    "brown or skin-colored lesion",
+    "slightly raised patch",
+    "slow growth",
+    "usually painless"
+  ],
+  "keywords": {
+    "en": ["benign keratosis", "seborrheic keratosis", "waxy spot", "rough skin growth"],
+    "fr": ["kératose bénigne", "kératose séborrhéique", "tache rugueuse", "lésion bénigne"],
+    "ar": ["تقرن حميد", "بقعة خشنة", "نمو جلدي حميد", "بقعة بنية"],
+    "dz": ["bo9a khachna", "tache bniya", "jeld khchin", "bo9a tal3a"]
+  },
+  "severity_indicators": {
+    "low": ["small stable rough spot", "no pain", "no bleeding"],
+    "medium": ["irritation", "itching", "visible growth", "cosmetic concern"],
+    "high": ["rapid change", "bleeding", "pain", "irregular color", "uncertain lesion"]
+  },
+  "temporary_advice": [
+    "Monitor the lesion over time",
+    "Avoid scratching or picking it",
+    "Protect skin from sun exposure",
+    "Take photos if it changes",
+    "Keep the area clean"
+  ],
+  "avoid": [
+    "Do not cut or remove it yourself",
+    "Do not ignore sudden changes",
+    "Avoid scratching",
+    "Avoid irritating products on the lesion"
+  ],
+  "risk_notes": "Benign keratosis is usually harmless, but it can sometimes resemble more serious skin conditions, so changes should be checked.",
+  "when_to_see_doctor": [
+    "If the lesion changes rapidly",
+    "If it bleeds, hurts, or becomes inflamed",
+    "If color or borders become irregular",
+    "If you are unsure whether it is benign",
+    "If it causes discomfort"
+  ]
+}

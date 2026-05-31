@@ -1,0 +1,74 @@
+{
+  "names": {
+    "en": "Insect Bites",
+    "fr": "Piqûres d'insectes",
+    "ar": "لدغات الحشرات",
+    "dz": ["bite", "9ars", "9ers", "qarsat", "7ka men 7chra"]
+  },
+
+  "short_description": "Insect bites occur when insects like mosquitoes, fleas, or bedbugs pierce the skin, causing itching, redness, and sometimes swelling.",
+
+  "common_symptoms": [
+    "itching",
+    "redness",
+    "swelling",
+    "small bump on skin",
+    "burning sensation",
+    "mild pain",
+    "skin irritation"
+  ],
+
+  "keywords": {
+    "en": ["insect bite", "mosquito bite", "itchy bump", "skin bite", "bug bite"],
+    "fr": ["piqûre", "moustique", "insecte", "bouton qui gratte"],
+    "ar": ["لدغة", "قرصة", "حشرة", "حكة", "تورم"],
+    "dz": ["bite", "9ars", "7ka", "bo9a", "7chra 9arsetni"]
+  },
+
+  "severity_indicators": {
+    "low": [
+      "small itchy bump",
+      "mild redness",
+      "light itching"
+    ],
+    "medium": [
+      "swelling increases",
+      "persistent itching",
+      "multiple bites"
+    ],
+    "high": [
+      "severe swelling",
+      "painful bite",
+      "signs of infection",
+      "pus",
+      "fever",
+      "allergic reaction",
+      "difficulty breathing"
+    ]
+  },
+
+  "temporary_advice": [
+    "Wash the area with clean water and mild soap",
+    "Apply a soothing cream or anti-itch lotion",
+    "Avoid scratching to prevent infection",
+    "Use cold compress to reduce swelling",
+    "Keep the area clean"
+  ],
+
+  "avoid": [
+    "Do not scratch the bite",
+    "Avoid dirty hands touching the area",
+    "Avoid applying unknown substances",
+    "Do not break the skin"
+  ],
+
+  "risk_notes": "Most insect bites are harmless, but some can cause allergic reactions or infections if scratched or untreated.",
+
+  "when_to_see_doctor": [
+    "If swelling becomes severe",
+    "If there is pus or signs of infection",
+    "If fever appears",
+    "If breathing difficulty occurs (possible allergy)",
+    "If symptoms worsen instead of improving"
+  ]
+}

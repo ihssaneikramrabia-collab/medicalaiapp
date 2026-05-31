@@ -1,0 +1,64 @@
+{
+  "names": {
+    "en": "Warts",
+    "fr": "Verrues",
+    "ar": "الثآليل",
+    "dz": ["warts", "taloul", "taalil", "7biba khachna"]
+  },
+  "short_description": "Warts are small skin growths often caused by a viral infection of the skin. They are usually harmless but can spread to other areas or other people.",
+  "common_symptoms": [
+    "small rough bumps",
+    "skin-colored or darker growths",
+    "rough surface",
+    "sometimes pain when pressed",
+    "may appear on hands, feet, or body",
+    "can spread over time"
+  ],
+  "keywords": {
+    "en": ["warts", "wart", "rough bump", "skin growth", "viral wart"],
+    "fr": ["verrue", "verrues", "bouton dur", "excroissance peau"],
+    "ar": ["ثؤلول", "ثآليل", "زوائد جلدية", "نتوء خشن"],
+    "dz": ["warts", "taloul", "taalil", "7biba khachna", "bo9a khachna"]
+  },
+  "severity_indicators": {
+    "low": [
+      "small single wart",
+      "no pain",
+      "stable size"
+    ],
+    "medium": [
+      "multiple warts",
+      "wart spreading",
+      "pain when walking or pressing",
+      "cosmetic concern"
+    ],
+    "high": [
+      "rapid spreading",
+      "bleeding",
+      "severe pain",
+      "infection signs",
+      "warts in sensitive areas"
+    ]
+  },
+  "temporary_advice": [
+    "Avoid touching or scratching warts",
+    "Keep the area clean and dry",
+    "Do not share towels or personal items",
+    "Cover the wart if it is likely to spread",
+    "Consider medical advice for safe removal options"
+  ],
+  "avoid": [
+    "Do not cut or pick the wart",
+    "Avoid sharing towels, razors, or nail tools",
+    "Do not try unsafe home removal methods",
+    "Avoid touching other skin areas after touching the wart"
+  ],
+  "risk_notes": "Warts are usually harmless, but they can spread and may need treatment if painful, multiple, or persistent.",
+  "when_to_see_doctor": [
+    "If warts spread or multiply",
+    "If they become painful or bleed",
+    "If they are on the face, genitals, or sensitive areas",
+    "If you are unsure it is a wart",
+    "If they do not improve or keep returning"
+  ]
+}

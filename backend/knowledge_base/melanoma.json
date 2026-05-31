@@ -1,0 +1,70 @@
+{
+  "names": {
+    "en": "Melanoma",
+    "fr": "Mélanome",
+    "ar": "سرطان الجلد (الميلانوما)",
+    "dz": ["khala khatira", "bo9a gham9a", "tache khatira", "mole tbdel"]
+  },
+
+  "short_description": "Melanoma is a serious type of skin cancer that can develop from moles or appear as a new dark spot. Early detection is very important.",
+
+  "common_symptoms": [
+    "dark mole",
+    "change in size of a mole",
+    "change in shape",
+    "irregular borders",
+    "multiple colors in one spot",
+    "itching or bleeding mole",
+    "new unusual spot on skin"
+  ],
+
+  "keywords": {
+    "en": ["melanoma", "skin cancer", "dark mole", "changing mole", "irregular mole"],
+    "fr": ["mélanome", "cancer de la peau", "grain de beauté suspect"],
+    "ar": ["سرطان الجلد", "شامة خطيرة", "بقعة داكنة", "تغير الشامة"],
+    "dz": ["khala khatira", "bo9a gham9a", "tache tbdel", "khala tbdel", "rash gharib"]
+  },
+
+  "severity_indicators": {
+    "low": [
+      "small stable mole",
+      "no change over time"
+    ],
+    "medium": [
+      "mole slightly changing",
+      "irregular shape",
+      "different color shades"
+    ],
+    "high": [
+      "rapid change in size",
+      "bleeding mole",
+      "itching mole",
+      "multiple colors",
+      "irregular borders",
+      "new unusual dark spot"
+    ]
+  },
+
+  "temporary_advice": [
+    "Monitor any mole or spot carefully",
+    "Take photos to track changes",
+    "Avoid excessive sun exposure",
+    "Use sunscreen regularly"
+  ],
+
+  "avoid": [
+    "Do not ignore changes in moles",
+    "Do not try to remove it yourself",
+    "Avoid strong sun exposure"
+  ],
+
+  "risk_notes": "Melanoma is a serious condition that requires early medical evaluation. Early detection can greatly improve outcomes.",
+
+  "when_to_see_doctor": [
+    "Immediately if a mole changes in size, shape, or color",
+    "If a mole bleeds or itches",
+    "If a new unusual dark spot appears",
+    "If there are multiple colors in a lesion",
+    "If you are unsure about any skin change"
+  ]
+}

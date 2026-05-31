@@ -1,0 +1,70 @@
+{
+  "names": {
+    "en": "Eczema",
+    "fr": "Eczéma",
+    "ar": "الأكزيما",
+    "dz": ["jfaf", "7ka", "eczema", "jeldi y7ak", "jeld nachef"]
+  },
+  "short_description": "Eczema is a common inflammatory skin condition that makes the skin dry, itchy, red, sensitive, and sometimes cracked. It often comes in flare-ups and may be triggered by soaps, cold weather, stress, sweat, or allergens.",
+  "common_symptoms": [
+    "dry skin",
+    "itching",
+    "red patches",
+    "rough or scaly skin",
+    "cracked skin",
+    "burning sensation",
+    "sensitive skin",
+    "flare-ups that come and go"
+  ],
+  "keywords": {
+    "en": ["eczema", "dry itchy skin", "atopic dermatitis", "red dry patches", "skin flare up"],
+    "fr": ["eczéma", "peau sèche", "démangeaison", "plaques rouges", "dermatite atopique"],
+    "ar": ["أكزيما", "جفاف الجلد", "حكة", "بقع حمراء", "تشقق الجلد", "التهاب الجلد التأتبي"],
+    "dz": ["jfaf", "7ka", "hamra", "9chour", "jeldi nachef", "jeldi y7ak", "ta7aroj"]
+  },
+  "severity_indicators": {
+    "low": [
+      "mild dryness",
+      "light itching",
+      "small dry patch"
+    ],
+    "medium": [
+      "persistent itching",
+      "red patches",
+      "cracked skin",
+      "eczema spreading",
+      "itching disturbing sleep"
+    ],
+    "high": [
+      "bleeding cracks",
+      "pus",
+      "severe pain",
+      "fever",
+      "rapid spreading",
+      "signs of infection"
+    ]
+  },
+  "temporary_advice": [
+    "Moisturize the skin several times daily with fragrance-free moisturizer",
+    "Use gentle soap or soap-free cleanser",
+    "Avoid hot water; use lukewarm water",
+    "Avoid scratching to prevent wounds and infection",
+    "Wear soft breathable clothing",
+    "Try to identify triggers such as perfumes, detergents, sweat, or cold weather"
+  ],
+  "avoid": [
+    "Avoid harsh soaps and perfumes",
+    "Avoid very hot showers",
+    "Do not scratch strongly",
+    "Avoid rough clothing like wool directly on skin",
+    "Avoid random steroid creams without advice"
+  ],
+  "risk_notes": "Eczema is usually not dangerous, but severe itching and broken skin can lead to infection or long-term flare-ups if not managed properly.",
+  "when_to_see_doctor": [
+    "If itching is severe or prevents sleep",
+    "If skin becomes painful, swollen, or infected",
+    "If there is pus, bleeding, or fever",
+    "If eczema spreads or does not improve with basic care",
+    "If it keeps coming back frequently"
+  ]
+}

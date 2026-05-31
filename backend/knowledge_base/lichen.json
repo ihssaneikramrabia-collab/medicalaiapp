@@ -1,0 +1,72 @@
+{
+  "names": {
+    "en": "Lichen Planus",
+    "fr": "Lichen plan",
+    "ar": "الحزاز المسطح",
+    "dz": ["lichen", "7zar", "bo9a banafsajiya", "rash banafsaji"]
+  },
+
+  "short_description": "Lichen planus is an inflammatory skin condition that causes itchy, flat, purple-colored bumps on the skin. It can also affect the mouth, scalp, or nails.",
+
+  "common_symptoms": [
+    "purple or dark rash",
+    "flat bumps",
+    "itching",
+    "shiny skin lesions",
+    "white lines on rash",
+    "sometimes mouth sores",
+    "skin discoloration"
+  ],
+
+  "keywords": {
+    "en": ["lichen planus", "purple rash", "itchy flat bumps", "skin inflammation"],
+    "fr": ["lichen plan", "taches violettes", "démangeaisons", "lésions plates"],
+    "ar": ["الحزاز", "طفح بنفسجي", "حكة", "بقع داكنة"],
+    "dz": ["lichen", "7zar", "banafsaji", "rash", "bo9a gham9a", "jeldi y7ak"]
+  },
+
+  "severity_indicators": {
+    "low": [
+      "small purple spots",
+      "mild itching",
+      "localized rash"
+    ],
+    "medium": [
+      "persistent itching",
+      "spreading rash",
+      "visible skin changes"
+    ],
+    "high": [
+      "severe itching",
+      "widespread rash",
+      "mouth involvement",
+      "painful lesions",
+      "nail or scalp damage"
+    ]
+  },
+
+  "temporary_advice": [
+    "Avoid scratching the affected area",
+    "Use gentle skincare products",
+    "Keep skin clean and hydrated",
+    "Avoid stress if possible",
+    "Wear soft clothing to avoid irritation"
+  ],
+
+  "avoid": [
+    "Avoid scratching",
+    "Avoid harsh soaps or chemicals",
+    "Avoid friction on the skin",
+    "Do not use random treatments"
+  ],
+
+  "risk_notes": "Lichen planus is not usually dangerous, but it can be chronic and uncomfortable, and may affect quality of life.",
+
+  "when_to_see_doctor": [
+    "If itching becomes severe",
+    "If rash spreads or worsens",
+    "If mouth or nails are affected",
+    "If lesions are painful",
+    "If condition persists for a long time"
+  ]
+}

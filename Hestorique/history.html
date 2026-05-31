@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>History - Skin Health Dashboard</title>
+
+  <link rel="stylesheet" href="history.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<header class="topbar">
+  <div class="top-left">
+    <div class="menu-wrap">
+      <button class="menu-btn" id="menuBtn" type="button">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+      <div class="drop-menu" id="sideMenu">
+        <a href="history.html"><i class="fa-regular fa-clock"></i><span data-i18n="history">History</span></a>
+        <a href="../Analyse/analyse.html"><i class="fa-regular fa-pen-to-square"></i><span data-i18n="newChat">New Chat</span></a>
+        <a href="../My Account/myacc.html"><i class="fa-regular fa-user"></i><span data-i18n="myAccount">My Account</span></a>
+        <a href="../Settings/setting.html"><i class="fa-solid fa-gear"></i><span data-i18n="settings">Settings</span></a>
+        <a href="#" id="logoutBtn"><i class="fa-solid fa-arrow-right-from-bracket"></i><span data-i18n="logOut">Log Out</span></a>
+      </div>
+    </div>
+
+    <div class="logo-box">
+      <img src="../Images/logo.png" alt="Logo">
+    </div>
+
+    <div class="title-box">
+      <h1 data-i18n="appTitle">Unified Skin Health Dashboard</h1>
+      <p data-i18n="appSubtitle">AI-powered skin rash analysis with voice assistant support</p>
+    </div>
+  </div>
+
+  <nav class="nav">
+    <a href="../Home/home.html" data-i18n="home">Home</a>
+    <a href="../Analyse/analyse.html" data-i18n="analysis">Analysis</a>
+    <a href="../Conseil/conseil.html" data-i18n="conseils">Conseils</a>
+    <a href="../Login/login.html" class="profile">
+      <i class="fa-solid fa-user"></i>
+    </a>
+  </nav>
+</header>
+
+<main class="history-page">
+
+  <section class="guest-card" id="guestCard">
+    <div class="guest-icon">
+      <i class="fa-solid fa-lock"></i>
+    </div>
+
+    <div>
+      <h2 data-i18n="historyRegisteredOnly">History is available for registered users</h2>
+      <p data-i18n="historyGuestText">Create an account or log in to save and view your scan and chat history.</p>
+    </div>
+
+    <a href="../Login/login.html" data-i18n="loginRegister">Login / Register</a>
+  </section>
+
+  <section class="history-content" id="historyContent">
+
+    <div class="page-head">
+      <div>
+        <h2 data-i18n="history">History</h2>
+        <p data-i18n="historyPageDesc">Review your previous scan results and chatbot conversations.</p>
+      </div>
+
+      <button class="primary-btn" id="newAnalysisBtn" type="button">
+        <i class="fa-solid fa-plus"></i>
+        <span data-i18n="newAnalysis">New Analysis</span>
+      </button>
+    </div>
+
+    <section class="stats-grid">
+      <div class="stat-card card">
+        <div class="stat-icon"><i class="fa-solid fa-camera-retro"></i></div>
+        <h3 id="totalScans">0</h3>
+        <p data-i18n="totalScans">Total Scans</p>
+        <small data-i18n="savedImageAnalyses">Saved image analyses</small>
+      </div>
+
+      <div class="stat-card card">
+        <div class="stat-icon purple"><i class="fa-solid fa-chart-line"></i></div>
+        <h3 id="avgConfidence">0%</h3>
+        <p data-i18n="averageConfidence">Average Confidence</p>
+        <small data-i18n="acrossAllScans">Across all scans</small>
+      </div>
+
+      <div class="stat-card card">
+        <div class="stat-icon blue"><i class="fa-solid fa-virus"></i></div>
+        <h3 id="mostDetected">--</h3>
+        <p data-i18n="mostDetected">Most Detected</p>
+        <small data-i18n="mostFrequentCondition">Most frequent condition</small>
+      </div>
+
+      <div class="stat-card card">
+        <div class="stat-icon orange"><i class="fa-regular fa-clock"></i></div>
+        <h3 id="lastScan">--</h3>
+        <p data-i18n="lastScan">Last Scan</p>
+        <small data-i18n="latestAnalysisDate">Latest analysis date</small>
+      </div>
+    </section>
+
+    <section class="filters-card card">
+      <div class="search-box">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        <input type="text" id="searchInput" data-i18n-placeholder="searchDiseasePlaceholder" placeholder="Search by disease...">
+      </div>
+
+      <select id="confidenceFilter">
+        <option value="all" data-i18n="allConfidence">All confidence</option>
+        <option value="high" data-i18n="highConfidence">High confidence ≥ 80%</option>
+        <option value="medium" data-i18n="mediumConfidence">Medium 50% - 79%</option>
+        <option value="low" data-i18n="lowConfidence">Low &lt; 50%</option>
+      </select>
+
+      <select id="sortSelect">
+        <option value="newest" data-i18n="newestFirst">Newest first</option>
+        <option value="oldest" data-i18n="oldestFirst">Oldest first</option>
+        <option value="confidence" data-i18n="highestConfidence">Highest confidence</option>
+      </select>
+
+      <button class="outline-btn" id="clearFiltersBtn" type="button">
+        <i class="fa-solid fa-rotate-left"></i>
+        <span data-i18n="reset">Reset</span>
+      </button>
+    </section>
+
+    <section class="tabs">
+      <button class="tab-btn active" data-tab="scans">
+        <i class="fa-solid fa-image"></i>
+        <span data-i18n="scanHistory">Scan History</span>
+      </button>
+
+      <button class="tab-btn" data-tab="chat">
+        <i class="fa-regular fa-comments"></i>
+        <span data-i18n="chatHistory">Chat History</span>
+      </button>
+    </section>
+
+    <section class="card panel active-panel" id="scansPanel">
+      <div class="panel-head">
+        <div>
+          <h3 data-i18n="scanHistory">Scan History</h3>
+          <p data-i18n="savedAnalysisResults">Saved analysis results from your uploaded images.</p>
+        </div>
+
+        <button class="danger-outline" id="clearScansBtn" type="button">
+          <i class="fa-solid fa-trash"></i>
+          <span data-i18n="clearDemo">Clear Demo</span>
+        </button>
+      </div>
+
+      <div class="history-list" id="scanList"></div>
+
+      <div class="empty-state" id="emptyScans">
+        <i class="fa-regular fa-folder-open"></i>
+        <h3 data-i18n="noScansFound">No scans found</h3>
+        <p data-i18n="changeFiltersOrNewAnalysis">Try changing filters or start a new analysis.</p>
+      </div>
+    </section>
+
+    <section class="card panel" id="chatPanel">
+      <div class="panel-head">
+        <div>
+          <h3 data-i18n="chatHistory">Chat History</h3>
+          <p data-i18n="recentChatbotConversations">Your recent chatbot conversations and assistant replies.</p>
+        </div>
+      </div>
+
+      <div class="chat-list" id="chatList"></div>
+
+      <div class="empty-state" id="emptyChat">
+        <i class="fa-regular fa-comments"></i>
+        <h3 data-i18n="noChatHistoryFound">No chat history found</h3>
+        <p data-i18n="assistantConversationsAppear">Your assistant conversations will appear here.</p>
+      </div>
+    </section>
+
+  </section>
+</main>
+
+<div class="details-modal" id="detailsModal">
+  <div class="details-box">
+    <div class="details-head">
+      <div>
+        <h3>
+          <i class="fa-solid fa-notes-medical"></i>
+          <span data-i18n="scanDetails">Scan Details</span>
+        </h3>
+        <p data-i18n="fullAnalysisInfo">Full information about this analysis.</p>
+      </div>
+
+      <button type="button" id="closeDetailsBtn">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <div class="details-body" id="detailsBody"></div>
+  </div>
+</div>
+
+<script src="../global_setings/language.js"></script>
+<script src="../global_setings/global_settings.js"></script>
+<script src="history.js"></script>
+</body>
+</html>

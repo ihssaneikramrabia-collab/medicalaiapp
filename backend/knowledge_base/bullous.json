@@ -1,0 +1,69 @@
+{
+  "names": {
+    "en": "Bullous Skin Conditions",
+    "fr": "Maladies bulleuses",
+    "ar": "أمراض فقاعية جلدية",
+    "dz": ["nfakh", "fga3a", "bla3a f jeld"]
+  },
+
+  "short_description": "Bullous conditions involve fluid-filled blisters forming on the skin. They can result from irritation, burns, infections, or autoimmune diseases.",
+
+  "common_symptoms": [
+    "blisters filled with fluid",
+    "skin peeling",
+    "redness",
+    "pain or burning sensation",
+    "fragile skin",
+    "itching"
+  ],
+
+  "keywords": {
+    "en": ["blisters", "skin blisters", "bullous", "fluid bubbles"],
+    "fr": ["cloques", "ampoules", "bulles peau"],
+    "ar": ["فقاعات", "بثور مائية", "جلد يتقشر"],
+    "dz": ["nfakh", "fga3a", "bo9a fih ma", "jeldi ytnza3"]
+  },
+
+  "severity_indicators": {
+    "low": [
+      "small isolated blister",
+      "mild irritation"
+    ],
+    "medium": [
+      "multiple blisters",
+      "painful skin",
+      "spreading area"
+    ],
+    "high": [
+      "large blisters",
+      "skin peeling widely",
+      "fever",
+      "infection signs",
+      "severe pain"
+    ]
+  },
+
+  "temporary_advice": [
+    "Do not burst blisters",
+    "Keep the area clean and dry",
+    "Cover with sterile dressing if needed",
+    "Avoid friction or pressure on the area"
+  ],
+
+  "avoid": [
+    "Do not pop the blisters",
+    "Avoid touching with dirty hands",
+    "Avoid applying unknown creams",
+    "Do not expose to heat or friction"
+  ],
+
+  "risk_notes": "Some blistering conditions can be serious, especially if widespread or linked to infection or immune disease.",
+
+  "when_to_see_doctor": [
+    "If blisters are large or spreading",
+    "If there is pain or fever",
+    "If skin starts peeling significantly",
+    "If there are signs of infection (pus, redness, swelling)",
+    "If condition worsens quickly"
+  ]
+}

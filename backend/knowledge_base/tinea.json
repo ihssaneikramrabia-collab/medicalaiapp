@@ -1,0 +1,59 @@
+{
+  "names": {
+    "en": "Tinea (Fungal Infection)",
+    "fr": "Mycose (Tinea)",
+    "ar": "فطريات الجلد",
+    "dz": ["champignon", "fetr", "jeld fih fetr", "tinea"]
+  },
+  "short_description": "Tinea is a fungal infection that affects the skin, often causing itchy, ring-shaped rashes. It can spread easily in warm and humid conditions.",
+  "common_symptoms": [
+    "itching",
+    "ring-shaped rash",
+    "red circular patches",
+    "scaling skin",
+    "spreading rash",
+    "dry or cracked skin"
+  ],
+  "keywords": {
+    "en": ["tinea", "fungal infection", "ringworm", "skin fungus"],
+    "fr": ["mycose", "champignon peau", "infection fongique"],
+    "ar": ["فطريات", "سعفة", "عدوى فطرية"],
+    "dz": ["champignon", "fetr", "7ka", "bo9a tdaour"]
+  },
+  "severity_indicators": {
+    "low": [
+      "small itchy patch",
+      "localized rash"
+    ],
+    "medium": [
+      "spreading rash",
+      "persistent itching",
+      "multiple patches"
+    ],
+    "high": [
+      "rapid spreading",
+      "pain or swelling",
+      "infection signs",
+      "no improvement after treatment"
+    ]
+  },
+  "temporary_advice": [
+    "Keep the area clean and dry",
+    "Avoid sharing towels or clothes",
+    "Wear loose and breathable clothing",
+    "Maintain good hygiene"
+  ],
+  "avoid": [
+    "Do not scratch the area",
+    "Avoid moisture and sweating",
+    "Avoid sharing personal items",
+    "Do not ignore spreading rash"
+  ],
+  "risk_notes": "Tinea is contagious and can spread to other parts of the body or to other people if not treated properly.",
+  "when_to_see_doctor": [
+    "If the rash spreads quickly",
+    "If there is no improvement",
+    "If infection signs appear",
+    "If itching becomes severe"
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "names": {
+    "en": "Unknown / Normal Skin",
+    "fr": "Inconnu / Peau normale",
+    "ar": "غير معروف / جلد طبيعي",
+    "dz": ["normal", "ma ban walo", "jeld 3adi", "machi bayen"]
+  },
+  "short_description": "This category means the image may show normal skin or a condition that the AI model cannot identify with enough certainty. It should not be considered a final diagnosis.",
+  "common_symptoms": [
+    "no clear lesion",
+    "normal skin appearance",
+    "uncertain skin change",
+    "mild redness",
+    "small unclear spot",
+    "image may be unclear"
+  ],
+  "keywords": {
+    "en": ["normal skin", "unknown", "unclear lesion", "not sure", "healthy skin"],
+    "fr": ["peau normale", "inconnu", "lésion incertaine", "pas sûr", "peau saine"],
+    "ar": ["جلد طبيعي", "غير معروف", "غير واضح", "لست متأكد", "بشرة سليمة"],
+    "dz": ["normal", "ma ban walo", "machi bayen", "jeld 3adi", "mafhmtch wach"]
+  },
+  "severity_indicators": {
+    "low": ["no clear symptoms", "stable skin", "normal appearance"],
+    "medium": ["mild unclear redness", "persistent discomfort", "uncertain spot"],
+    "high": ["rapid change", "bleeding", "severe pain", "spreading rash", "fever"]
+  },
+  "temporary_advice": [
+    "Use a clear, well-lit image for better analysis",
+    "Monitor any skin change over time",
+    "Avoid scratching or irritating the area",
+    "Keep the skin clean and moisturized",
+    "Consult a dermatologist if symptoms persist or worsen"
+  ],
+  "avoid": [
+    "Do not rely only on AI if symptoms are concerning",
+    "Avoid using random treatments without advice",
+    "Do not ignore pain, bleeding, fever, or rapid spread",
+    "Avoid scratching"
+  ],
+  "risk_notes": "Unknown or normal output means the AI is uncertain or sees no obvious abnormality. Medical advice is needed if symptoms are persistent, painful, spreading, bleeding, or changing.",
+  "when_to_see_doctor": [
+    "If the skin change persists",
+    "If symptoms worsen or spread",
+    "If there is pain, bleeding, fever, or pus",
+    "If a mole changes shape, size, or color",
+    "If you are worried or unsure"
+  ]
+}

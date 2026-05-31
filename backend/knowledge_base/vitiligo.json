@@ -1,0 +1,62 @@
+{
+  "names": {
+    "en": "Vitiligo",
+    "fr": "Vitiligo",
+    "ar": "البهاق",
+    "dz": ["bo9a bidha", "tache blanche", "jeld byad", "baha9"]
+  },
+  "short_description": "Vitiligo is a skin condition where patches of skin lose pigment and become lighter or white. It is not contagious, but it can spread over time and may need dermatology follow-up.",
+  "common_symptoms": [
+    "white patches on skin",
+    "loss of skin color",
+    "well-defined light spots",
+    "patches on face, hands, arms, or body",
+    "sometimes white hair in affected areas",
+    "usually no pain or itching"
+  ],
+  "keywords": {
+    "en": ["vitiligo", "white patches", "loss of pigment", "white spots"],
+    "fr": ["vitiligo", "taches blanches", "perte de pigmentation", "peau blanche"],
+    "ar": ["بهاق", "بقع بيضاء", "فقدان لون الجلد", "تصبغ الجلد"],
+    "dz": ["bo9a bidha", "tache blanche", "jeld byad", "baha9", "lawn rah"]
+  },
+  "severity_indicators": {
+    "low": [
+      "small stable white patch",
+      "no pain",
+      "no rapid spread"
+    ],
+    "medium": [
+      "patches spreading slowly",
+      "multiple white patches",
+      "visible cosmetic concern"
+    ],
+    "high": [
+      "rapid spreading",
+      "large areas affected",
+      "eye or hair color changes",
+      "major emotional distress"
+    ]
+  },
+  "temporary_advice": [
+    "Protect affected areas from sun exposure",
+    "Use sunscreen regularly",
+    "Monitor if patches are spreading",
+    "Avoid skin trauma or harsh products",
+    "Consider dermatology advice for treatment options"
+  ],
+  "avoid": [
+    "Avoid strong sun exposure without protection",
+    "Do not use random bleaching or whitening products",
+    "Avoid scratching or irritating the skin",
+    "Do not assume it is contagious"
+  ],
+  "risk_notes": "Vitiligo is not contagious and is usually not dangerous, but it can spread and affect confidence. Sun protection is important because lighter patches burn more easily.",
+  "when_to_see_doctor": [
+    "If white patches spread quickly",
+    "If new patches appear frequently",
+    "If patches are on face, hands, or sensitive areas",
+    "If there is emotional distress",
+    "If diagnosis is uncertain"
+  ]
+}

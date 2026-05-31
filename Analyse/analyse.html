@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Analysis - Skin Health Dashboard</title>
+
+  <link rel="stylesheet" href="analyse.css" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+<header class="topbar">
+  <div class="top-left">
+    <div class="menu-wrap">
+      <button class="menu-btn" id="menuBtn" type="button">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+
+    <div class="drop-menu" id="sideMenu">
+  <a href="../Hestorique/history.html">
+    <i class="fa-regular fa-clock"></i>
+    <span data-i18n="history">History</span>
+  </a>
+
+  <a href="../Analyse/analyse.html" id="newChatBtn">
+    <i class="fa-regular fa-pen-to-square"></i>
+    <span data-i18n="newChat">New Chat</span>
+  </a>
+
+  <a href="../My Account/myacc.html">
+    <i class="fa-regular fa-user"></i>
+    <span data-i18n="myAccount">My Account</span>
+  </a>
+
+  <a href="../Settings/setting.html">
+    <i class="fa-solid fa-gear"></i>
+    <span data-i18n="settings">Settings</span>
+  </a>
+
+  <a href="#" id="logoutBtn">
+    <i class="fa-solid fa-arrow-right-from-bracket"></i>
+    <span data-i18n="logOut">Log Out</span>
+  </a>
+</div>
+    </div>
+
+    <div class="logo-box">
+      <img src="../Images/logo.png" alt="Logo">
+    </div>
+
+    <div class="title-box">
+      <h1 data-i18n="appTitle">Unified Skin Health Dashboard</h1>
+      <p data-i18n="appSubtitle">AI-powered skin rash analysis with voice assistant support</p>
+    </div>
+  </div>
+
+  <nav class="nav">
+  <a href="../Home/home.html" data-i18n="home">Home</a>
+  <a href="../Analyse/analyse.html" data-i18n="analysis">Analysis</a>
+  <a href="../Conseil/conseil.html" data-i18n="conseils">Conseils</a>
+  <a href="../Login/login.html" class="profile">
+    <i class="fa-solid fa-user"></i>
+  </a>
+</nav>
+</header>
+
+<div class="camera-modal" id="cameraModal">
+  <div class="camera-box">
+    <div class="camera-head">
+      <h3>
+        <i class="fa-solid fa-camera"></i>
+        <span data-i18n="takePhoto">Take Photo</span>
+      </h3>
+      <button type="button" id="closeCameraBtn">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+    </div>
+
+    <video id="cameraVideo" autoplay playsinline></video>
+    <canvas id="cameraCanvas" hidden></canvas>
+
+    <div class="camera-actions">
+      <button type="button" id="capturePhotoBtn">
+        <i class="fa-solid fa-camera-retro"></i>
+        <span data-i18n="capture">Capture</span>
+      </button>
+
+      <button type="button" id="stopCameraBtn">
+        <i class="fa-solid fa-ban"></i>
+        <span data-i18n="cancel">Cancel</span>
+      </button>
+    </div>
+  </div>
+</div>
+
+<main class="page">
+
+  <section class="card analysis-card">
+    <div class="card-scroll">
+
+      <div class="section-title">
+        <div class="icon-box">
+          <i class="fa-solid fa-sparkles"></i>
+        </div>
+        <div>
+          <h2 data-i18n="imageAnalysis">Image Analysis</h2>
+          <p data-i18n="imageAnalysisDesc">Upload up to 10 skin images or take a photo</p>
+        </div>
+      </div>
+
+      <div class="upload-box" id="uploadBox">
+        <input type="file" id="skinImage" accept="image/*" multiple hidden>
+
+        <div class="upload-status-icon" id="uploadStatusIcon">
+          <i class="fa-solid fa-cloud-arrow-up"></i>
+        </div>
+
+        <h3 id="uploadTitle" data-i18n="chooseCaptureImages">Choose or capture skin images</h3>
+        <p id="uploadText" data-i18n="uploadFromDevice">Upload from device or use camera</p>
+
+        <div class="upload-actions">
+          <button type="button" class="upload-action-btn" id="chooseFileBtn">
+            <i class="fa-solid fa-folder-open"></i>
+            <span id="chooseFileText" data-i18n="chooseFile">Choose File</span>
+          </button>
+
+          <button type="button" class="upload-action-btn camera-btn" id="takePhotoBtn">
+            <i class="fa-solid fa-camera"></i>
+            <span id="takePhotoText" data-i18n="takePhoto">Take Photo</span>
+          </button>
+
+          <button type="button" class="clear-btn" id="clearImagesBtn">
+            <i class="fa-solid fa-trash"></i>
+            <span data-i18n="clearAll">Clear All</span>
+          </button>
+        </div>
+
+        <small id="fileName" data-i18n="noImageSelected">No image selected</small>
+        <div class="preview-grid" id="previewGrid"></div>
+      </div>
+
+      <div class="hint">
+        <i class="fa-solid fa-circle-info"></i>
+        <span data-i18n="uploadHint">You can upload maximum 10 images. Use clear and well-lit photos.</span>
+      </div>
+
+      <div class="result-box">
+        <div class="result-top">
+          <div>
+            <h3 data-i18n="detectedCondition">Detected Condition</h3>
+            <p data-i18n="primaryPrediction">Primary AI prediction with confidence score</p>
+          </div>
+
+          <div class="score-circle" id="scoreCircle">
+            <div>
+              <strong id="mainPercent">--%</strong>
+              <small data-i18n="score">Score</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="condition">
+          <span data-i18n="detectedCondition">Detected Condition</span>
+          <h1 id="mainDisease" data-i18n="waitingAnalysis">Waiting for analysis...</h1>
+          <p id="mainDescription" data-i18n="uploadAndAnalyze">
+            Upload images and click Analyze Image to generate the prediction.
+          </p>
+        </div>
+
+        <div class="sub-section">
+          <div class="sub-title">
+            <h4 data-i18n="otherProbabilities">Other Probabilities</h4>
+            <small data-i18n="topAlternatives">Top 3 alternatives</small>
+          </div>
+
+          <div class="alt">
+            <b id="alt1Name" data-i18n="noDataYet">No data yet</b>
+            <div class="bar"><div id="alt1Bar"></div></div>
+            <strong id="alt1Percent">0%</strong>
+          </div>
+
+          <div class="alt">
+            <b id="alt2Name" data-i18n="noDataYet">No data yet</b>
+            <div class="bar"><div id="alt2Bar"></div></div>
+            <strong id="alt2Percent">0%</strong>
+          </div>
+
+          <div class="alt">
+            <b id="alt3Name" data-i18n="noDataYet">No data yet</b>
+            <div class="bar"><div id="alt3Bar"></div></div>
+            <strong id="alt3Percent">0%</strong>
+          </div>
+        </div>
+
+        <div class="sub-section">
+          <div class="sub-title">
+            <h4 data-i18n="recommendations">Recommendations</h4>
+          </div>
+
+          <ul id="recommendations">
+            <li data-i18n="resultAfterAnalysis">Results will appear after image analysis.</li>
+            <li data-i18n="chatbotExplainResult">Chatbot will help explain the result below.</li>
+            <li data-i18n="educationalSupportOnly">This interface provides educational support only.</li>
+          </ul>
+        </div>
+      </div>
+
+      <button class="analyze-btn" id="analyzeBtn">
+        <span>
+          <i class="fa-solid fa-wand-magic-sparkles"></i>
+          <span data-i18n="analyzeImage">Analyze Image</span>
+        </span>
+        <i class="fa-solid fa-arrow-right"></i>
+      </button>
+
+    </div>
+  </section>
+
+  <section class="card chat-card">
+    <div class="section-title">
+      <div class="icon-box">
+        <i class="fa-solid fa-robot"></i>
+      </div>
+
+      <div class="chat-title-row">
+        <div>
+          <h2 data-i18n="chatbotAssistant">Chatbot Assistant</h2>
+          <p data-i18n="askDetectedCondition">Ask questions about the detected skin condition</p>
+        </div>
+
+        <div class="online">
+          <span></span>
+          <b data-i18n="online">Online</b>
+        </div>
+      </div>
+    </div>
+
+    <div class="chat-body" id="chatBody">
+      <div class="empty-chat" id="emptyChat">
+        <i class="fa-regular fa-comments"></i>
+        <h3 data-i18n="noConversationYet">No conversation yet</h3>
+        <p data-i18n="emptyChatHint">Upload and analyze an image, or ask a question below.</p>
+      </div>
+    </div>
+
+    <div class="chat-input">
+      <button id="voiceBtn" class="round-btn" type="button">
+        <i class="fa-solid fa-microphone-lines"></i>
+      </button>
+
+      <input type="text" id="chatInput" data-i18n-placeholder="typeQuestion" placeholder="Type your question here...">
+
+      <button id="sendBtn" class="send-btn" type="button">
+        <i class="fa-solid fa-paper-plane"></i>
+      </button>
+    </div>
+  </section>
+
+</main>
+
+<script src="../global_setings/language.js"></script>
+<script src="../global_setings/global_settings.js"></script>
+<script src="analyse.js"></script>
+
+</body>
+</html>

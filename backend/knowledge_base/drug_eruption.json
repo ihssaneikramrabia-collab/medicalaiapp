@@ -1,0 +1,69 @@
+{
+  "names": {
+    "en": "Drug Eruption",
+    "fr": "Éruption médicamenteuse",
+    "ar": "طفح جلدي بسبب الدواء",
+    "dz": ["reaction dawa", "tahassos men dawa", "rash men dawa", "7asasiya men dawa"]
+  },
+  "short_description": "A drug eruption is a skin reaction that can happen after taking a medication. It may appear as a rash, redness, itching, swelling, or blisters. Some reactions are mild, but others can be serious and need urgent medical attention.",
+  "common_symptoms": [
+    "skin rash after taking medicine",
+    "redness",
+    "itching",
+    "swelling",
+    "hives",
+    "burning sensation",
+    "spots or patches",
+    "sometimes blisters or peeling skin"
+  ],
+  "keywords": {
+    "en": ["drug eruption", "medicine allergy", "medication rash", "rash after medicine", "allergic reaction", "hives"],
+    "fr": ["éruption médicamenteuse", "allergie médicament", "réaction au médicament", "urticaire", "boutons après médicament"],
+    "ar": ["طفح بسبب الدواء", "حساسية من الدواء", "حساسية دواء", "طفح بعد الدواء", "شرى", "تورم"],
+    "dz": ["reaction dawa", "7asasiya men dawa", "rash men dawa", "dawa darli hboub", "dawa darli 7ka", "wajhi waram"]
+  },
+  "severity_indicators": {
+    "low": [
+      "mild rash",
+      "light itching",
+      "small red spots without other symptoms"
+    ],
+    "medium": [
+      "rash spreading",
+      "strong itching",
+      "hives",
+      "swelling in one area",
+      "rash not improving"
+    ],
+    "high": [
+      "difficulty breathing",
+      "swelling of face or lips",
+      "fever with rash",
+      "skin peeling",
+      "large blisters",
+      "severe pain",
+      "rash after starting a new medication"
+    ]
+  },
+  "temporary_advice": [
+    "Do not take another dose until you get medical advice if you suspect a medication reaction",
+    "Write down the name of the medication and when symptoms started",
+    "Avoid scratching the rash",
+    "Keep the skin cool and avoid harsh products",
+    "Seek medical advice quickly if the rash spreads or swelling appears"
+  ],
+  "avoid": [
+    "Do not ignore swelling of the face, lips, tongue, or difficulty breathing",
+    "Do not restart the suspected medication without medical advice",
+    "Avoid mixing medicines without consulting a doctor or pharmacist",
+    "Avoid applying random creams on a severe rash"
+  ],
+  "risk_notes": "Drug reactions can be mild, but some can become urgent, especially if there is breathing difficulty, facial swelling, fever, blisters, or skin peeling.",
+  "when_to_see_doctor": [
+    "Urgently if there is difficulty breathing or swelling of face/lips/tongue",
+    "Urgently if rash appears with fever, blisters, or skin peeling",
+    "If the rash started after a new medication",
+    "If symptoms spread quickly or become painful",
+    "If you are unsure whether to continue the medication"
+  ]
+}

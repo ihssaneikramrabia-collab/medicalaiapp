@@ -1,0 +1,67 @@
+{
+  "names": {
+    "en": "Moles / Nevi",
+    "fr": "Grains de beauté / Naevus",
+    "ar": "الشامات",
+    "dz": ["khala", "khala f jeld", "bo9a bniya", "grain de beauté"]
+  },
+  "short_description": "Moles, also called nevi, are pigmented skin spots that are usually harmless. However, they should be monitored for changes in size, shape, color, or bleeding.",
+  "common_symptoms": [
+    "brown or dark spot",
+    "flat or raised mole",
+    "round or oval shape",
+    "stable spot over time",
+    "skin-colored or darker lesion",
+    "usually painless"
+  ],
+  "keywords": {
+    "en": ["mole", "moles", "nevi", "nevus", "brown spot", "pigmented spot", "skin spot"],
+    "fr": ["grain de beauté", "naevus", "tache brune", "tache pigmentée"],
+    "ar": ["شامة", "شامات", "بقعة بنية", "بقعة داكنة", "وحمة"],
+    "dz": ["khala", "khala bniya", "bo9a bniya", "grain de beauté", "tache bniya"]
+  },
+  "severity_indicators": {
+    "low": [
+      "small stable mole",
+      "regular round shape",
+      "one uniform color",
+      "no pain or bleeding"
+    ],
+    "medium": [
+      "mole slightly changing",
+      "new mole in adult age",
+      "itching mole",
+      "different color shades"
+    ],
+    "high": [
+      "rapid change in size",
+      "irregular borders",
+      "asymmetry",
+      "multiple colors",
+      "bleeding mole",
+      "painful mole",
+      "new unusual dark spot"
+    ]
+  },
+  "temporary_advice": [
+    "Monitor the mole regularly",
+    "Take photos to compare changes over time",
+    "Protect skin from strong sun exposure",
+    "Use sunscreen when exposed to sunlight",
+    "Do not scratch or injure the mole"
+  ],
+  "avoid": [
+    "Do not try to remove a mole yourself",
+    "Do not ignore changes in size, shape, or color",
+    "Avoid strong sun exposure without protection",
+    "Avoid scratching or cutting the mole"
+  ],
+  "risk_notes": "Most moles are harmless, but changes in size, shape, color, border, or bleeding can be warning signs that require medical evaluation.",
+  "when_to_see_doctor": [
+    "If the mole changes in size, shape, or color",
+    "If the mole has irregular borders",
+    "If the mole bleeds, hurts, or itches",
+    "If a new unusual dark spot appears",
+    "If the mole looks different from other moles"
+  ]
+}

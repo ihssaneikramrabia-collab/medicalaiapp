@@ -1,0 +1,18 @@
+{
+  "itching": ["7ka", "7akka", "حكة", "يحك", "démangeaison", "demangeaison", "itch", "itching"],
+  "redness": ["hamra", "7mara", "حمرة", "احمرار", "rougeur", "redness", "red"],
+  "dryness": ["jfaf", "nachef", "جفاف", "ناشف", "sécheresse", "secheresse", "dry skin", "dry"],
+  "patch": ["bo9a", "tache", "بقعة", "بقع", "patch", "spot", "spots"],
+  "pimples": ["hboub", "7boub", "حبوب", "بثور", "boutons", "pimples", "zits"],
+  "swelling": ["waram", "ورم", "تورم", "gonflement", "swelling", "swollen"],
+  "pain": ["wja3", "وجع", "ألم", "douleur", "pain", "hurt"],
+  "burning": ["7ri9", "حريق", "حرقان", "brûlure", "brulure", "burning"],
+  "blisters": ["nfakh", "fga3a", "فقاعات", "نفطة", "cloques", "ampoules", "blisters"],
+  "rash": ["tahajoj", "ta7aroj", "طفح", "طفح جلدي", "rash", "irritation", "éruption", "eruption"],
+  "scaling": ["9chour", "قشور", "squames", "scaling", "peeling"],
+  "pus": ["9i7", "قيح", "pus"],
+  "bleeding": ["dem", "دم", "نزيف", "bleeding", "saigne"],
+  "mole": ["khala", "شامة", "grain de beauté", "grain de beaute", "mole"],
+  "spreading": ["tatnchar", "تنتشر", "ينتشر", "se propage", "spreading"],
+  "fever": ["skhana", "سخانة", "حمى", "fièvre", "fievre", "fever"]
+}

@@ -1,0 +1,143 @@
+/* responsive.css */
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  margin: 0;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+img,
+video,
+canvas {
+  max-width: 100%;
+  height: auto;
+}
+
+button,
+input,
+select,
+textarea {
+  max-width: 100%;
+}
+
+/* يخلي أغلب les sections يتأقلمو */
+.container,
+.content,
+.main,
+.card,
+.box,
+.form-container,
+.dashboard,
+.page,
+.wrapper {
+  max-width: 1200px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* tablette */
+@media (max-width: 992px) {
+  body {
+    font-size: 15px;
+  }
+
+  .container,
+  .content,
+  .main,
+  .card,
+  .box,
+  .form-container,
+  .dashboard,
+  .page,
+  .wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .row,
+  .cards,
+  .grid,
+  .dashboard,
+  .main-content {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+/* phone */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  .row,
+  .cards,
+  .grid,
+  .dashboard,
+  .main-content,
+  .form-row {
+    flex-direction: column !important;
+  }
+
+  .card,
+  .box,
+  .form-container,
+  form,
+  table {
+    width: 100% !important;
+  }
+
+  input,
+  select,
+  textarea,
+  button {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  nav,
+  header,
+  .navbar {
+    flex-wrap: wrap;
+  }
+}
+
+/* very small phone */
+@media (max-width: 480px) {
+  .container,
+  .content,
+  .main,
+  .card,
+  .box,
+  .form-container,
+  .dashboard,
+  .page,
+  .wrapper {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  button {
+    padding: 10px;
+  }
+}

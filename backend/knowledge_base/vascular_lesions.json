@@ -1,0 +1,59 @@
+{
+  "names": {
+    "en": "Vascular Lesions",
+    "fr": "Lésions vasculaires",
+    "ar": "آفات وعائية",
+    "dz": ["3roq", "brouq", "tache hamra", "dam ta7t jeld"]
+  },
+  "short_description": "Vascular lesions are skin marks caused by blood vessel abnormalities. They can appear as red, purple, or blue spots or lines.",
+  "common_symptoms": [
+    "red or purple spots",
+    "visible blood vessels",
+    "flat or raised marks",
+    "skin discoloration",
+    "sometimes painless"
+  ],
+  "keywords": {
+    "en": ["vascular lesion", "blood vessel marks", "red spots skin"],
+    "fr": ["lésion vasculaire", "tache rouge", "vaisseaux visibles"],
+    "ar": ["أوعية دموية", "بقع حمراء", "علامات وعائية"],
+    "dz": ["3roq", "brouq", "hamra", "bo9a hamra"]
+  },
+  "severity_indicators": {
+    "low": [
+      "small stable spot",
+      "no pain",
+      "no change over time"
+    ],
+    "medium": [
+      "visible vessels",
+      "increasing size",
+      "cosmetic concern"
+    ],
+    "high": [
+      "rapid growth",
+      "bleeding",
+      "pain",
+      "color changes",
+      "irregular shape"
+    ]
+  },
+  "temporary_advice": [
+    "Monitor the lesion over time",
+    "Avoid trauma to the area",
+    "Protect skin from sun exposure",
+    "Use sunscreen"
+  ],
+  "avoid": [
+    "Do not scratch or injure the lesion",
+    "Do not ignore changes",
+    "Avoid strong sun exposure"
+  ],
+  "risk_notes": "Most vascular lesions are harmless, but some changes may require medical evaluation.",
+  "when_to_see_doctor": [
+    "If the lesion changes in size or color",
+    "If it starts bleeding",
+    "If there is pain",
+    "If it grows rapidly"
+  ]
+}

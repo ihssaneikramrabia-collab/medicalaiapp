@@ -1,0 +1,68 @@
+{
+  "names": {
+    "en": "Benign Skin Tumors",
+    "fr": "Tumeurs bénignes de la peau",
+    "ar": "أورام جلدية حميدة",
+    "dz": ["tumor", "kora f jeld", "bo9a kbira", "t3emla f jeld"]
+  },
+
+  "short_description": "Benign skin tumors are non-cancerous growths that appear on the skin. They are usually harmless but should be monitored for changes.",
+
+  "common_symptoms": [
+    "lump under the skin",
+    "small bump",
+    "soft or firm growth",
+    "slow growth",
+    "no pain in most cases",
+    "skin-colored or slightly darker spot"
+  ],
+
+  "keywords": {
+    "en": ["benign tumor", "skin lump", "skin growth", "non cancer lump"],
+    "fr": ["tumeur bénigne", "boule sous la peau", "masse cutanée"],
+    "ar": ["ورم حميد", "كتلة تحت الجلد", "انتفاخ الجلد"],
+    "dz": ["kora", "bo9a", "tumor", "t3emla", "3andi 7aja taht jeldi"]
+  },
+
+  "severity_indicators": {
+    "low": [
+      "small stable lump",
+      "no pain",
+      "no change in size"
+    ],
+    "medium": [
+      "slow increase in size",
+      "slight discomfort",
+      "visible bump"
+    ],
+    "high": [
+      "rapid growth",
+      "irregular shape",
+      "color change",
+      "pain or bleeding",
+      "ulceration"
+    ]
+  },
+
+  "temporary_advice": [
+    "Monitor the size and appearance regularly",
+    "Avoid pressing or injuring the lump",
+    "Keep the skin clean",
+    "Take pictures to track changes over time"
+  ],
+
+  "avoid": [
+    "Do not try to remove it yourself",
+    "Avoid pressing or squeezing",
+    "Do not ignore rapid changes"
+  ],
+
+  "risk_notes": "Most benign tumors are harmless, but some skin growths may resemble more serious conditions. Monitoring is important.",
+
+  "when_to_see_doctor": [
+    "If the lump grows quickly",
+    "If color or shape changes",
+    "If there is pain, bleeding, or ulceration",
+    "If you are unsure about the nature of the growth"
+  ]
+}
